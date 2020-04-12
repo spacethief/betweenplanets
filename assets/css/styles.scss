@@ -1,0 +1,9 @@
+---
+---
+@import "vars";
+@import "main";
+@import "responsive";
+
+// Custom Images
+$siteurl: "{{ site.baseurl }}";
+.sitehead .site-title { background-image: url('#{$siteurl}/assets/images/sobp-triskelion-logo-crunch.png') }
