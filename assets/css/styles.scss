@@ -5,5 +5,5 @@
 @import "responsive";
 
 // Custom Images
-$siteurl: "{{ site.baseurl }}";
-.sitehead .site-title { background-image: url('#{$siteurl}/assets/images/sobp-triskelion-logo-crunch.png') }
+$assets: "{{ site.assets }}";
+#sitehead .site-title { background-image: url('#{$assets}sobp-triskelion-logo-crunch.png') }

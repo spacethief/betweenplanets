@@ -1,3 +1,6 @@
+artmedia: "https://media.betweenplanets.com/art/"
+comicsmedia: "https://media.betweenplanets.com/comics/"
+assets: "https://media.betweenplanets.com/assets/"
 
 collections:
   characters:

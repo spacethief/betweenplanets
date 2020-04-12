@@ -2,14 +2,18 @@ body {
     margin: 0;
     background-color: $primary-bg;
     color: $primary-color;
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+}
 
-.sitehead {
-    font-family: $title-font;
+#sitehead {
+    font-family: $main-title;
     color: $hi-color;
     a {
         color: $hi-color;
@@ -25,5 +29,33 @@ a {
         background-size: 80%;
         min-height: 70px;
         text-shadow: 1px 1px rgb(0,0,0), -10px -10px 6px rgba(0,0,0,0.4);
+    }
+}
+
+#content {
+    padding: 2%;
+    margin: 0 auto 50px;
+    max-width: 95%;
+    h1 {
+        font-family: $post-title;
+        color: $hi-color;
+        font-size: 1.5em;
+        margin-bottom: .3em;
+        padding-left: 1%;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+#sitefoot {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: $hi-bg;
+    padding: 1em 0;
+    p {
+        margin: 0;
     }
 }
