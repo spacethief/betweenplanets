@@ -1,9 +1,72 @@
 ---
 ---
-@import "vars";
-@import "main";
+@import "resets";
 @import "responsive";
 
-// Custom Images
+/* Fonts */
+$main-title: 'Architects Daughter', sans-serif;
+$post-title: 'Philosopher', sans-serif;
+
+/* Colors */
+$primary-bg: rgb(8,8,8);
+$hi-bg: rgb(2,5,22);
+$primary-color: #ffffff;
+$hi-color: rgb(247,29,147);
+$dimmed: #686868;
+
+/* Assets Directory */
 $assets: "{{ site.assets }}";
-#sitehead .site-title { background-image: url('#{$assets}sobp-triskelion-logo-crunch.png') }
+
+body {
+    background-color: $primary-bg;
+    color: $primary-color;
+    font-size: 16px;
+}
+
+#sitehead {
+    font-family: $main-title;
+    color: $hi-color;
+    a {
+        color: $hi-color;
+    }
+    .site-title {
+        padding-top: .3em;
+        text-align: center;
+        font-size: 2.2em;
+        background-color: $hi-bg;
+        background-image: url('#{$assets}sobp-triskelion-logo-still.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        min-height: 70px;
+        text-shadow: 1px 1px rgb(0,0,0), -10px -10px 6px rgba(0,0,0,0.4);
+    }
+    .site-title:hover { 
+        background-image: url('#{$assets}sobp-triskelion-logo-spin.png');
+    }
+}
+
+#content {
+    padding: 2%;
+    margin: 0 auto 50px;
+    max-width: 95%;
+    h1 {
+        font-family: $post-title;
+        color: $hi-color;
+        font-size: 1.5em;
+        margin-bottom: .3em;
+        padding-left: 1%;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+#sitefoot {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: $hi-bg;
+    padding: 1em 0;
+}
