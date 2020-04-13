@@ -1,7 +1,9 @@
 {% include head.html %}
 
-<div id="content">
     {{ content }}
-</div>
+    <aside class="featured"><img src="{{ site.artmedia }}{{ page.image }}" alt="{{ page.title }}" /></aside>
+    {% if page.song %}
+        {% include soundcloud.html %}
+    {% endif %}
 
 {% include foot.html %}

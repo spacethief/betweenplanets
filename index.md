@@ -1,5 +1,14 @@
 ---
 title: where stardust falls
+image: cabin-dragon.jpg
+song: "700460356"
 ---
-# The Cabin with the Dragon
-![A witch with a staff and pointy hat trudges through snow. In the background is a dragon lying on top of a cabin, watching.]({{ site.artmedia }}cabin-dragon.jpg "The Cabin with the Dragon")
+between planets we  
+wander with souls on fire  
+haunted by shadows  
+we can't leave behind  
+  
+where the light won't find us  
+a song will pierce the darkness  
+where the light won't find us  
+a fire within will rage  

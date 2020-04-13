@@ -1,16 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>{{ page.title }} ...between planets</title>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ '/favicon-32.png' | relative_url }}" sizes="32x32">
-    <link rel="shortcut icon" sizes="196x196" href="{{ '/favicon-196.png' | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ '/favicon-180.png' | relative_url }}" sizes="180x180">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="" />
-    {% feed_meta %}
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ '/favicon-apple-touch-114.png' | relative_url }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/favicon-apple-touch-114.png' | relative_url }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ '/favicon-apple-touch-144.png' | relative_url }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/favicon-apple-touch-144.png' | relative_url }}">
+    <link rel="icon" type="image/vnd.microsoft.icon"  sizes="32x32 48x48" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="icon" sizes="128x128" href="{{ '/favicon.icns' | relative_url }}">
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/x-icon">    {% feed_meta %}
     {% seo %}
   </head>
   <body>
@@ -18,3 +19,4 @@
       <div id="sitehead">
         <h1 class="site-title"><a href={{ site.url }}>between planets</a></h1>
       </div>
+      <div id="content" class="{{ page.title | slugify }}{% if page.song %} song{% endif %}">

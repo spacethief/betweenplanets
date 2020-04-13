@@ -60,6 +60,14 @@ body {
     p {
         text-align: center;
     }
+    .soundcloud {
+        position: fixed;
+        bottom: 50px;
+        width: 95%;
+    }
+}
+#content.song {
+    margin-bottom: 100px;
 }
 
 #sitefoot {
@@ -69,4 +77,7 @@ body {
     width: 100%;
     background-color: $hi-bg;
     padding: 1em 0;
+    p {
+        margin: 0;
+    }
 }

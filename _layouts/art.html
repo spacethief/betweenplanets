@@ -1,0 +1,8 @@
+{% include head.html %}
+
+    {{ content }}
+    {% if page.tags.size > 0 %}
+        <p class="tags">{{ page.tags | sort | join: ", " }}</p>
+    {% endif %}
+
+{% include foot.html %}

@@ -3,20 +3,17 @@ comicsmedia: "https://media.betweenplanets.com/comics/"
 assets: "https://media.betweenplanets.com/assets/"
 
 collections:
-  characters:
+  art:
+    output: true
+  comics:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "characters"
+      type: "art"
     values:
-      layout: "character"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      layout: "art"
   - scope:
       path: ""
     values:
