@@ -1,5 +1,6 @@
 # url: https://www.betweenplanets.com/
 # baseurl: dev/
+permalink: /:title/
 
 artmedia: "https://media.betweenplanets.com/art/"
 comicsmedia: "https://media.betweenplanets.com/comics/"
@@ -25,4 +26,4 @@ plugins:
 sass:
   style: compressed
 
-exclude: ["/src media/","README.md"]
+exclude: ["/src media/","README.md","favicon*","/assets/images/"]
