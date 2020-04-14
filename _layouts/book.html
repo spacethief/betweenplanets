@@ -1,0 +1,11 @@
+{% include head.html %}
+
+{% if page.song %}
+    {% include soundcloud.html %}
+{% endif %}
+
+{{ content }}
+
+{% include postnav.html %}
+
+{% include foot.html %}

@@ -1,9 +1,21 @@
 {% include head.html %}
 
-    {{ content }}
+{% if page.song %}
+    {% include soundcloud.html %}
+{% endif %}
+
+{{ content }}
+
+{% if page.image %}
     <aside class="featured"><img src="{{ site.artmedia }}{{ page.image }}" alt="{{ page.title }}" /></aside>
-    {% if page.song %}
-        {% include soundcloud.html %}
-    {% endif %}
+{% endif %}
+
+{% if page.tags.size > 0 %}
+    <p class="tags">{{ page.tags | sort | join: ", " }}</p>
+{% endif %}
+
+{% if page.collection == 'art' or page.collection == 'comics' %}
+    {% include postnav.html %}
+{% endif %}
 
 {% include foot.html %}

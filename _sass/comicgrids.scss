@@ -1,0 +1,21 @@
+.comic-single p {
+    display: grid;
+    grid-gap: .3em;
+    text-align: center;
+}
+.comic-single p img:nth-child(1) { grid-area: one; }
+.comic-single p img:nth-child(2) { grid-area: two; }
+.comic-single p img:nth-child(3) { grid-area: three; }
+.comic-single p img:nth-child(4) { grid-area: four; }
+.comic-single p img:nth-child(5) { grid-area: five; }
+.comic-single p img:nth-child(6) { grid-area: six; }
+.comic-single p img:nth-child(7) { grid-area: seven; }
+.comic-single p img:nth-child(8) { grid-area: eight; }
+.comic-single p img:nth-child(9) { grid-area: nine; }
+.comic-single p img:nth-child(10) { grid-area: ten; }
+
+.althea-the-terrible-page-three p {
+    grid-template-columns: 1fr;
+}
+
+.althea-the-terrible-page-eight p {grid-template-areas: "one one" "two three" "four four" "five five";}

@@ -1,0 +1,7 @@
+---
+title: gallery
+---
+{% assign arts = site.art | sort:"date" | reverse %}
+{% for art in arts %}
+<a href="{{ art.url | relative_url }}"><img src="{{ site.artmedia }}{{ art.thumb }}" alt="{{ art.title }}" title="{{ art.title }}" /></a>
+{% endfor %}

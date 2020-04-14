@@ -1,6 +1,5 @@
 ---
 title: where stardust falls
-image: cabin-dragon.jpg
 song: "700460356"
 ---
 between planets we  

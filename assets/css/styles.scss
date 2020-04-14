@@ -1,6 +1,7 @@
 ---
 ---
 @import "resets";
+@import "comicgrids";
 @import "responsive";
 
 /* Fonts */
@@ -21,6 +22,12 @@ body {
     background-color: $primary-bg;
     color: $primary-color;
     font-size: 16px;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #sitehead {
@@ -44,11 +51,31 @@ body {
     .site-title:hover { 
         background-image: url('#{$assets}sobp-triskelion-logo-spin.png');
     }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+        text-align: center;
+        padding: 0 .3em;
+        grid-column-gap: .3em;
+        span {
+            a {
+                display: block;
+                padding: .5em 0;
+                background-color: $hi-bg;
+                border: 1px solid;
+                transition: background-color .3s ease-in-out;
+            }
+            a:hover {
+                background-color: $primary-bg;
+            }
+        }
+    }
 }
 
 #content {
+    flex: 1 0 auto;
     padding: 2%;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     max-width: 95%;
     h1 {
         font-family: $post-title;
@@ -57,27 +84,63 @@ body {
         margin-bottom: .3em;
         padding-left: 1%;
     }
-    p {
-        text-align: center;
-    }
     .soundcloud {
-        position: fixed;
-        bottom: 50px;
+        position: relative;
+        bottom: 0;
         width: 95%;
     }
 }
-#content.song {
-    margin-bottom: 100px;
+#content.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(110px,1fr));
+    grid-gap: .5em;
+}
+#content.art-single {
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.postnav {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    max-width: 95%;
+    margin: 1em auto;
+    grid-gap: .3em;
+    text-align: center;
+    font-size: .9em;
+    font-family: $main-title;
+    a {
+        background-color: $hi-bg;
+        display: block;
+        padding: .3em;
+        border: 1px solid;
+        color: $hi-color;
+    }    
 }
 
 #sitefoot {
-    position: fixed;
-    bottom: 0;
+    height: 70px;
+    flex-shrink: 0;
     text-align: center;
     width: 100%;
     background-color: $hi-bg;
     padding: 1em 0;
     p {
         margin: 0;
+    }
+    #socialnav {
+        margin: .3em 0;
+        .social {
+            width: 30px;
+            height: 30px;
+            margin: .3em .5em;
+            display: inline-block;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }    
     }
 }

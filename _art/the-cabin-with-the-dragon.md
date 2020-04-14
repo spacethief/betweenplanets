@@ -1,5 +1,7 @@
 ---
 title: The Cabin with the Dragon
+thumb: cabin-dragon-thumb.jpg
+date: 2019-10-11
 tags: [ pen, marker, procreate ]
 ---
 # The Cabin with the Dragon

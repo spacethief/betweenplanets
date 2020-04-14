@@ -1,3 +1,6 @@
+# url: https://www.betweenplanets.com/
+# baseurl: dev/
+
 artmedia: "https://media.betweenplanets.com/art/"
 comicsmedia: "https://media.betweenplanets.com/comics/"
 assets: "https://media.betweenplanets.com/assets/"
@@ -11,11 +14,6 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "art"
-    values:
-      layout: "art"
-  - scope:
-      path: ""
     values:
       layout: "default"
 
@@ -26,3 +24,5 @@ plugins:
 
 sass:
   style: compressed
+
+exclude: ["/src media/","README.md"]

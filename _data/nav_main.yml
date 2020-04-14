@@ -1,0 +1,6 @@
+- name: Art
+  url: /art.html
+- name: Comics
+  url: /comics.html
+- name: Music
+  url: /music.html

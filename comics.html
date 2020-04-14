@@ -1,0 +1,9 @@
+---
+title: comics
+---
+{% assign comics = site.comics | sort:"date" %}
+{% for comics in comics %}
+{% if comics.cover == true %}
+    <a href="{{ comics.url | relative_url }}"><img src="{{ site.comicsmedia }}{{ page.book | slugify }}/{{ comics.thumb }}" alt="{{ comics.title }}" title="{{ comics.title }}" /></a>
+{% endif %}
+{% endfor %}
