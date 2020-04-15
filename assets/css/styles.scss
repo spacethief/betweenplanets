@@ -1,7 +1,6 @@
 ---
 ---
 @import "resets";
-@import "comicgrids";
 @import "responsive";
 
 /* Fonts */
@@ -37,15 +36,14 @@ body {
         color: $hi-color;
     }
     .site-title {
-        padding-top: .3em;
         text-align: center;
-        font-size: 2.2em;
+        font-size: 1.9em;
         background-color: $hi-bg;
         background-image: url('#{$assets}sobp-triskelion-logo-still.png');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 80%;
-        min-height: 70px;
+        background-size: 70%;
+        min-height: 50px;
         text-shadow: 1px 1px rgb(0,0,0), -10px -10px 6px rgba(0,0,0,0.4);
     }
     .site-title:hover { 
@@ -53,14 +51,14 @@ body {
     }
     nav {
         display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+        grid-template-columns: repeat(2,minmax(100px,1fr));
         text-align: center;
         padding: 0 .3em;
         grid-column-gap: .3em;
         span {
             a {
                 display: block;
-                padding: .5em 0;
+                padding: .2em 0;
                 background-color: $hi-bg;
                 border: 1px solid;
                 transition: background-color .3s ease-in-out;
@@ -101,6 +99,12 @@ body {
         text-align: center;
     }
 }
+#content.comic-single {
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
 
 .postnav {
     display: grid;
@@ -121,12 +125,12 @@ body {
 }
 
 #sitefoot {
-    height: 70px;
+    height: 50px;
     flex-shrink: 0;
     text-align: center;
     width: 100%;
     background-color: $hi-bg;
-    padding: 1em 0;
+    padding: 0;
     p {
         margin: 0;
     }

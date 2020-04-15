@@ -11,8 +11,29 @@ collections:
     output: true
   comics:
     output: true
+  fullcomics:
+    output: true
+    permalink: /comics/:title/
+  mobilecomics:
+    output: true
+    permalink: /comics/:title/
 
 defaults:
+  - scope:
+      path: ""
+      type: "comics"
+    values:
+      layout: "book_cover"
+  - scope:
+      path: ""
+      type: "fullcomics"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+      type: "mobilecomics"
+    values:
+      layout: "book"
   - scope:
       path: ""
     values:

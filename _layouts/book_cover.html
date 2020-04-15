@@ -1,0 +1,19 @@
+{% include head.html %}
+
+{{ content }}
+
+<nav class="postnav">
+{% assign thisbook = page.book %}
+{% assign fullbook = site.fullcomics | where:item.book, thisbook %}
+{% for comics in fullbook limit:1 %}
+<a href="{{ comics.url | relative_url }}">Full Page Layout</a>
+{% endfor %}
+
+{% assign mobook = site.mobilecomics | where:item.book, thisbook %}
+{% for comics in mobook limit:1 %}
+<a href="{{ comics.url | relative_url }}">Mobile Layout</a>
+{% endfor %}
+</nav>
+
+
+{% include foot.html %}

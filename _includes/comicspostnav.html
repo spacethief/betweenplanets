@@ -1,23 +1,13 @@
-{% include head.html %}
-
-{% if page.song %}
-    {% include soundcloud.html %}
-{% endif %}
-
-{{ content }}
-
 <nav class="postnav">
     {% if page.previous.url %}
         <a class="previous" href="{{ page.previous.url | relative_url }}">previous</a>
-    {% else %}
+    {% else page.collection == 'comics' %}
         <a class="previous" href="{{ '/comics/' | relative_url }}">more comics</a>
     {% endif %}
 
     {% if page.next.url %}
         <a class="next" href="{{ page.next.url | relative_url }}">next</a>
-    {% else %}
+    {% elsif page.collection == 'comics' %}
         <a class="next" href="{{ '/comics/' | relative_url }}">more comics</a>
     {% endif %}
 </nav>
-
-{% include foot.html %}

@@ -2,9 +2,9 @@
     {% if page.previous.url %}
         <a class="previous" href="{{ page.previous.url | relative_url }}">previous</a>
     {% elsif page.collection == 'art' %}
-        <a class="previous" href="{{ '/art.html' | relative_url }}">gallery</a>
+        <a class="previous" href="{{ '/art/' | relative_url }}">gallery</a>
     {% elsif page.collection == 'comics' %}
-        <a class="previous" href="{{ '/comics.html' | relative_url }}">more comics</a>
+        <a class="previous" href="{{ '/comics/' | relative_url }}">more comics</a>
     {% else %}
         <p class="previous">that's it</a>
     {% endif %}
@@ -12,9 +12,9 @@
     {% if page.next.url %}
         <a class="next" href="{{ page.next.url | relative_url }}">next</a>
     {% elsif page.collection == 'art' %}
-        <a class="next" href="{{ '/art.html' | relative_url }}">gallery</a>
+        <a class="next" href="{{ '/art/' | relative_url }}">gallery</a>
     {% elsif page.collection == 'comics' %}
-        <a class="next" href="{{ '/comics.html' | relative_url }}">more comics</a>
+        <a class="next" href="{{ '/comics/' | relative_url }}">more comics</a>
     {% else %}
         <p class="previous">that's it</a>
     {% endif %}

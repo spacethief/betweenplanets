@@ -13,9 +13,159 @@
 .comic-single p img:nth-child(8) { grid-area: eight; }
 .comic-single p img:nth-child(9) { grid-area: nine; }
 .comic-single p img:nth-child(10) { grid-area: ten; }
+.comic-single p img:nth-child(11) { grid-area: eleven; }
+.comic-single p img:nth-child(12) { grid-area: twelve; }
 
-.althea-the-terrible-page-three p {
-    grid-template-columns: 1fr;
+.althea-the-terrible-page-one p { 
+    grid-template-areas: 
+    "one" 
+    "two" 
+    "three"; 
+}
+.althea-the-terrible-page-two p img:nth-child(2) {
+    grid-area: two1;
+    grid-column-start: two1;
+    grid-column-end: three3;
+}
+.althea-the-terrible-page-two p img:nth-child(3) {
+    grid-area: two3;
+    grid-column-start: two3;
+    grid-column-end: two4;
+    grid-row: 2;
+    z-index: 20;
+}
+.althea-the-terrible-page-two p img:nth-child(4) {
+    grid-area: two4;
+    grid-column-start: two4;
+    grid-column-end: three6;
+}
+.althea-the-terrible-page-two p { 
+    grid-template-areas: 
+    "one one one one one one" 
+    "two1 two2 two3 two4 two5 two6" 
+    "three1 three2 three3 three4 three5 three6" 
+    "five five five five five five"; 
+}
+.althea-the-terrible-page-three p { 
+    grid-template-areas: 
+    "one one one one one one" 
+    "two two two three three three" 
+    "four four five five six six";
+}
+.althea-the-terrible-page-four p img:nth-child(7) {
+    grid-area: seven1;
+    grid-column-start: seven1;
+    grid-column-end: seven4;
+    grid-row: 5;
+    z-index: 20;
+}
+.althea-the-terrible-page-four p img:nth-child(8) {
+    grid-area: seven2;
+    grid-column-start: seven2;
+    grid-column-end: eight6;
+    grid-row: 5;
+}
+.althea-the-terrible-page-four p {
+    grid-template-areas: 
+    "one one one one one one"
+    "two two two two two two"
+    "three three four four five five"
+    ". six six six six ."
+    "seven1 seven2 seven3 seven4 seven5 seven6"
+    "eight1 eight2 eight3 eight4 eight5 eight6"
+    "nine nine nine nine nine nine";
+}
+.althea-the-terrible-page-five p img:nth-child(3) {
+    grid-area: three2;
+    grid-column-start: three2;
+    grid-column-end: three9;
+}
+.althea-the-terrible-page-five p img:nth-child(6) {
+    z-index: 20;
+    grid-column-start: seven-start;
+    grid-column-end: seven-end;
+    grid-row: 6;
+}
+.althea-the-terrible-page-five p img:nth-child(7) {
+    grid-area: six;
+    grid-column-start: six-start;
+    grid-column-end: seven-end;
+}
+.althea-the-terrible-page-five p {
+    grid-template-areas:
+    "one one one one one"
+    "two two two two two"
+    "three1 three2 three3 three4 three5"
+    "three6 three7 three8 three9 three10"
+    "four four four four four"
+    "five five five five five"
+    "six six six seven seven"
+    "six six six seven seven";
+}
+/* full size 
+.althea-the-terrible-page-four p { 
+    grid-template-areas: 
+    "one one one two two two" 
+    "three three four four five five" 
+    ". . six six . ." 
+    "seven seven . . . ." 
+    "eight eight nine nine nine nine";
+}
+.althea-the-terrible-page-five p { 
+    grid-template-areas: 
+    "one one one one one one one two two two two two two two" 
+    "three three three three three four four four four four four four four four" 
+    ". . . . . . . . . six six six six six" 
+    "five five five five five five five seven seven seven seven seven seven seven";
+}
+*/
+.althea-the-terrible-page-six p img:nth-child(1) {
+    grid-column-start: one;
+    grid-column-end: two-start;
+}
+.althea-the-terrible-page-six p img:nth-child(7) {
+    grid-column-start: seven;
+    grid-column-end: seven3;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    z-index: 20;
+}
+.althea-the-terrible-page-six p img:nth-child(8) {
+    grid-area: eight2;
+    grid-column-start: seven2;
+    grid-column-end: eight9;
+    grid-row: 9;
+}
+.althea-the-terrible-page-six p img:nth-child(9) {
+    grid-column-start: nine2;
+    grid-column-end: ten;
+    grid-row-start: 12;
+    grid-row-end: 14;
+    z-index: 20;
+}
+.althea-the-terrible-page-six p img:nth-child(10) {
+    grid-column-start: ten;
+    grid-column-end: ten3;
+    grid-row-start: 11;
+    grid-row-end: 15;
+}
+.althea-the-terrible-page-six p { 
+    grid-template-areas: 
+    "one one . . ."
+    "one one two two two"
+    "one one two two two"
+    "three three three three three" 
+    "four four four four four" 
+    "five five five five five"
+    "six six six six six" 
+    "seven seven2 seven3 seven4 seven5"
+    "eight eight1 eight2 eight3 eight4"
+    "eight5 eight6 eight7 eight8 eight9"
+    "nine nine2 ten ten2 ten3"
+    "nine nine2 ten ten2 ten3"
+    "nine nine2 ten ten2 ten3"
+    "nine nine2 ten ten2 ten3"
+    "nine nine2 ten ten2 ten3"
 }
 
 .althea-the-terrible-page-eight p {grid-template-areas: "one one" "two three" "four four" "five five";}

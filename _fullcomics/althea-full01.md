@@ -1,8 +1,8 @@
 ---
-title: "Althea the Terrible: Page One Full"
+title: "Althea the Terrible: Page One"
 date: 2018-05-11
-order: 9
+order: 1
 book: Althea the Terrible
-full: true
+category: fullpage
 ---
 ![Back story part 1]({{ site.comicsmedia }}{{ page.book | slugify }}/althea-full-p01.jpg "Fire and Zombies")
