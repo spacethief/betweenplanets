@@ -5,19 +5,83 @@
 {% endif %}
 
 {{ content }}
+{% assign media = site.comicsmedia %}
 
-<nav class="postnav">
-    {% if page.previous.url %}
-        <a class="previous" href="{{ page.previous.url | relative_url }}">previous</a>
-    {% else %}
-        <a class="previous" href="{{ '/comics/' | relative_url }}">more comics</a>
-    {% endif %}
+<p>
+{% if page.image %}
+<!-- single image -->
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" alt="{{page.alt}}" title="{{page.alt}}">
+    </picture>
+{% endif %}
 
-    {% if page.next.url %}
-        <a class="next" href="{{ page.next.url | relative_url }}">next</a>
-    {% else %}
-        <a class="next" href="{{ '/comics/' | relative_url }}">more comics</a>
-    {% endif %}
-</nav>
+{% if page.image01 %}
+<!-- multiple images -->
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image01}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image01}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image01}}.jpg" alt="{{page.alt01}}" title="{{page.alt01}}">
+    </picture>
+{% endif %}
+{% if page.image02 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image02}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image02}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image02}}.jpg" alt="{{page.alt02}}" title="{{page.alt02}}">
+    </picture>
+{% endif %}
+{% if page.image03 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image03}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image03}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image03}}.jpg" alt="{{page.alt03}}" title="{{page.alt03}}">
+    </picture>
+{% endif %}
+{% if page.image04 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image04}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image04}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image04}}.jpg" alt="{{page.alt04}}" title="{{page.alt04}}">
+    </picture>
+{% endif %}
+{% if page.image05 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image05}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image05}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image05}}.jpg" alt="{{page.alt05}}" title="{{page.alt05}}">
+    </picture>
+{% endif %}
+{% if page.image06 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image06}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image06}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image06}}.jpg" alt="{{page.alt06}}" title="{{page.alt06}}">
+    </picture>
+{% endif %}
+{% if page.image07 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image07}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image07}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image07}}.jpg" alt="{{page.alt07}}" title="{{page.alt07}}">
+    </picture>
+{% endif %}
+{% if page.image08 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image08}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image08}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image08}}.jpg" alt="{{page.alt08}}" title="{{page.alt08}}">
+    </picture>
+{% endif %}
+{% if page.image09 %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image09}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image09}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image09}}.jpg" alt="{{page.alt09}}" title="{{page.alt09}}">
+    </picture>
+{% endif %}
+</p>
 
+{% include postnav.html %}
 {% include foot.html %}

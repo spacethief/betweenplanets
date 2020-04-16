@@ -1,7 +1,16 @@
 ---
 title: gallery
+layout: gallery
 ---
 {% assign arts = site.art | sort:"date" | reverse %}
+{% assign media = site.artmedia %}
+
 {% for art in arts %}
-<a href="{{ art.url | relative_url }}"><img src="{{ site.artmedia }}{{ art.thumb }}" alt="{{ art.title }}" title="{{ art.title }}" /></a>
+<a href="{{ art.url | relative_url }}">
+    <picture>
+        <source srcset="{{ media }}{{ art.image }}-thumb.webp" type="image/webp">
+        <source srcset="{{ media }}{{ art.image }}-thumb.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ art.image }}-thumb.jpg" alt="{{art.alt}}" title="{{art.title}}">
+  </picture>
+</a>
 {% endfor %}

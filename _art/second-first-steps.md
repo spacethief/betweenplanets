@@ -1,8 +1,11 @@
 ---
 title: Second First Steps
-thumb: second-first-steps-thumb.jpg
+thumb: second-first-steps-thumb
 date: 2019-10-08
 tags: [ procreate ]
+image: second-first-steps
+alt: A necromancer awakens a skeleton warrior.
+caption: Where's my camera?
+cast: [ rebecca ]
 ---
-# Second First Steps
-![A necromancer awakens a skeleton warrior.]({{ site.artmedia }}second-first-steps.jpg "Second First Steps")
+# {{ page.title }}

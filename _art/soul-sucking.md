@@ -1,8 +1,10 @@
 ---
 title: Soul Sucking
-thumb: soul-sucking-thumb.jpg
 date: 2019-10-30
 tags: [ pen, marker ]
+image: soul-sucking
+alt: A necromancer rips a corrupted spirit from the skeleton it has been possessing while her raven watches from its perch on another skeleton.
+caption: I ain't gonna work for no soul sucking jerk.
+cast: [ rebecca, morgen ]
 ---
-# Soul Sucking
-![A necromancer rips a corrupted spirit from the skeleton it has been possessing while her raven watches from its perch on another skeleton.]({{ site.artmedia }}soul-sucking.jpg "Soul Sucking")
+# {{ page.title }}

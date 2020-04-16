@@ -1,20 +1,24 @@
 <nav class="postnav">
     {% if page.previous.url %}
-        <a class="previous" href="{{ page.previous.url | relative_url }}">previous</a>
+        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">previous</a>
     {% elsif page.collection == 'art' %}
         <a class="previous" href="{{ '/art/' | relative_url }}">gallery</a>
-    {% elsif page.collection == 'comics' %}
+    {% elsif page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}
         <a class="previous" href="{{ '/comics/' | relative_url }}">more comics</a>
+    {% elsif page.collection == 'animation' %}
+        <a class="previous" href="{{ '/animation/' | relative_url }}">theater</a>
     {% else %}
         <p class="previous">that's it</a>
     {% endif %}
 
     {% if page.next.url %}
-        <a class="next" href="{{ page.next.url | relative_url }}">next</a>
+        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">next</a>
     {% elsif page.collection == 'art' %}
         <a class="next" href="{{ '/art/' | relative_url }}">gallery</a>
-    {% elsif page.collection == 'comics' %}
+    {% elsif page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}
         <a class="next" href="{{ '/comics/' | relative_url }}">more comics</a>
+    {% elsif page.collection == 'animation' %}
+        <a class="next" href="{{ '/animation/' | relative_url }}">theater</a>
     {% else %}
         <p class="previous">that's it</a>
     {% endif %}

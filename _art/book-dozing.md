@@ -1,8 +1,10 @@
 ---
 title: Book Dozing
-thumb: book-dozing-thumb.jpg
 date: 2019-09-17
 tags: [ procreate ]
+image: book-dozing
+alt: Rebecca and Morgen doze on books.
+caption: Studying spells takes a lot out of you.
+cast: [ rebecca, morgen ]
 ---
-# Book Dozing
-![Rebecca and Morgen doze on books.]({{ site.artmedia }}book-dozing.jpg "Book Dozing")
+# {{ page.title }}

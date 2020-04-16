@@ -6,15 +6,25 @@
 
 {{ content }}
 
-{% if page.image %}
-    <aside class="featured"><img src="{{ site.artmedia }}{{ page.image }}" alt="{{ page.title }}" /></aside>
+{% if page.collection == 'art' %}{% assign media = site.artmedia %}{% elsif page.collection == 'comics' %}{% assign media = site.comicsmedia %}{% elsif page.collection == 'animation' %}{% assign media = site.animedia %}{% endif %}
+
+{% if page.featured %}
+    <aside class="featured"><img src="{{ media }}{{ page.image }}" alt="{{ page.title }}" /></aside>
 {% endif %}
 
-{% if page.tags.size > 0 %}
+{% if page.image %}
+    <picture>
+        <source srcset="{{ media }}{{page.image}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{page.image}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{page.image}}.jpg" alt="{{page.alt}}" title="{{page.caption}}">
+  </picture>
+{% endif %}
+
+{% if page.tags %}
     <p class="tags">{{ page.tags | sort | join: ", " }}</p>
 {% endif %}
 
-{% if page.collection == 'art' or page.collection == 'comics' %}
+{% if page.collection == 'art' or page.collection == 'comics' or page.collection == 'animation' %}
     {% include postnav.html %}
 {% endif %}
 

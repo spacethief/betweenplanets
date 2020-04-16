@@ -1,6 +1,14 @@
 {% include head.html %}
 
 {{ content }}
+{% assign media = site.comicsmedia %}
+{% if page.image %}
+    <picture>
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" alt="{{page.alt}}" title="{{page.title}}">
+  </picture>
+{% endif %}
 
 <nav class="postnav">
 {% assign thisbook = page.book %}

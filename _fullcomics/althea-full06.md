@@ -4,5 +4,7 @@ date: 2018-06-15
 order: 6
 book: Althea the Terrible
 category: fullpage
+image: althea-full-p06
+alt: The dead are grumpy when you wake them.
+caption: Like an evil Pez dispenser.
 ---
-![The dead are grumpy when you wake them.]({{ site.comicsmedia }}{{ page.book | slugify }}/althea-full-p06.jpg "Like an evil Pez dispenser.")

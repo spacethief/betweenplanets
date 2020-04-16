@@ -5,8 +5,11 @@ permalink: /:title/
 artmedia: "https://media.betweenplanets.com/art/"
 comicsmedia: "https://media.betweenplanets.com/comics/"
 assets: "https://media.betweenplanets.com/assets/"
+animedia: "https://media.betweenplanets.com/animation/"
 
 collections:
+  animation:
+    output: true
   art:
     output: true
   comics:

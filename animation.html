@@ -1,0 +1,16 @@
+---
+title: theater
+layout: gallery
+---
+{% assign theater = site.animation | sort:"date" | reverse %}
+{% assign media = site.animedia %}
+
+{% for animation in theater %}
+<a href="{{ animation.url | relative_url }}">
+    <picture>
+        <source srcset="{{ media }}{{ animation.thumb }}.webp" type="image/webp">
+        <source srcset="{{ media }}{{ animation.thumb }}.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ animation.thumb }}.jpg" alt="{{animation.title}}" title="{{animation.title}}">
+  </picture>
+</a>
+{% endfor %}

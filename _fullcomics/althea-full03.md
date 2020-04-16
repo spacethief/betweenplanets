@@ -4,5 +4,7 @@ date: 2018-05-25
 order: 3
 book: Althea the Terrible
 category: fullpage
+image: althea-full-p03
+alt: Breaking and entering.
+caption: Now the door's runed.
 ---
-![Breaking and entering.]({{ site.comicsmedia }}{{ page.book | slugify }}/althea-full-p03.jpg "Now the door's runed.")
