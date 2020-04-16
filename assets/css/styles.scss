@@ -34,13 +34,13 @@ body {
 #sitehead {
     font-family: $main-title;
     color: $hi-color;
+    background-image: url('#{$assets}starfieldb-700.jpg');
     a {
         color: $hi-color;
     }
     .site-title {
         text-align: center;
         font-size: 1.9em;
-        background-color: $hi-bg;
         background-image: url('#{$assets}sobp-triskelion-logo-still.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -139,6 +139,7 @@ body {
     text-align: center;
     width: 100%;
     background-color: $hi-bg;
+    background-image: url('#{$assets}starfieldb-700.jpg');
     padding: 0;
     p {
         margin: 0;

@@ -50,4 +50,4 @@ plugins:
 sass:
   style: compressed
 
-exclude: ["/src media/","README.md","favicon*","/assets/images/"]
+exclude: ["/src media/","README.md","favicon*","/assets/images/","betweenplanets.code-workspace"]
