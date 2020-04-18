@@ -6,10 +6,18 @@
 
 {{ content }}
 
-{% if page.collection == 'art' %}{% assign media = site.artmedia %}{% elsif page.collection == 'comics' %}{% assign media = site.comicsmedia %}{% elsif page.collection == 'animation' %}{% assign media = site.animedia %}{% endif %}
+{% if page.collection == 'art' or page == 'index' %}{% assign media = site.artmedia %}{% elsif page.collection == 'comics' %}{% assign media = site.comicsmedia %}{% elsif page.collection == 'animation' %}{% assign media = site.animedia %}{% endif %}
 
 {% if page.featured %}
-    <aside class="featured"><img src="{{ media }}{{ page.image }}" alt="{{ page.title }}" /></aside>
+    <aside class="featured">
+        <picture>
+            <source srcset="{{ media }}{{page.featured}}.webp" type="image/webp">
+            <source srcset="{{ media }}{{page.featured}}.jpg" type="image/jpeg"> 
+            <source srcset="{{ media }}{{page.featured}}-540.jpg" type="image/jpeg"> 
+            <source srcset="{{ media }}{{page.featured}}-320.jpg" type="image/jpeg"> 
+            <img src="{{ media }}{{ page.featured }}.jpg" alt="{{ page.alt }}"  title="{{page.caption}}">
+        </picture>
+    </aside>
 {% endif %}
 
 {% if page.image %}
@@ -17,7 +25,7 @@
         <source srcset="{{ media }}{{page.image}}.webp" type="image/webp">
         <source srcset="{{ media }}{{page.image}}.jpg" type="image/jpeg"> 
         <img src="{{ media }}{{page.image}}.jpg" alt="{{page.alt}}" title="{{page.caption}}">
-  </picture>
+    </picture>
 {% endif %}
 
 {% if page.tags %}
