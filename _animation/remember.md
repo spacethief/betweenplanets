@@ -1,6 +1,6 @@
 ---
 title: Remember
-thumb: remember-thumb
+thumb: remember
 date: 2019-10-16
 tags: [ photoshop, "davinci resolve" ]
 source: youtube

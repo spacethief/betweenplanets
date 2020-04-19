@@ -1,18 +1,18 @@
 ---
 ---
 @import "resets";
-@import "responsive";
 
 /* Fonts */
 $main-title: 'Architects Daughter', sans-serif;
 $post-title: 'Philosopher', sans-serif;
 
 /* Colors */
-$primary-bg: rgb(8,8,8);
-$hi-bg: rgb(2,5,22);
+$primary-bg: #080808;
+$hi-bg: #020516;
 $primary-color: #ffffff;
-$hi-color: rgb(247,29,147);
+$hi-color: #F71D93;
 $dimmed: #686868;
+$black: #000000;
 
 /* Assets Directory */
 $assets: "{{ site.assets }}";
@@ -46,7 +46,7 @@ body {
         background-repeat: no-repeat;
         background-size: 70%;
         min-height: 50px;
-        text-shadow: 1px 1px rgb(0,0,0), -10px -10px 6px rgba(0,0,0,0.4);
+        text-shadow: 1px 1px $black, -10px -10px 6px rgba($black,0.4);
     }
     .site-title:hover { 
         background-image: url('#{$assets}sobp-triskelion-logo-spin.png');
@@ -94,12 +94,23 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(110px,1fr));
     grid-gap: .5em;
+    img {
+        width: 100%;
+    }
 }
 #content.art-single {
     p {
         margin: 0;
         text-align: center;
     }
+    p.buy {
+        margin: 1em 0;
+        a {
+            color: $hi-color;
+            border-bottom: 1px solid;
+        }
+    }
+   
 }
 #content.comic-single {
     p {
@@ -112,7 +123,7 @@ body {
 }
 #content.portrait iframe {
     width: 100%;
-    height: 550px;
+    height: 90vh;
 }
 
 .postnav {
@@ -158,3 +169,5 @@ body {
         }    
     }
 }
+
+@import "responsive";

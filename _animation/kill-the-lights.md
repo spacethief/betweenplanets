@@ -1,6 +1,6 @@
 ---
 title: Kill the Lights
-thumb: kill-the-lights-thumb
+thumb: kill-the-lights
 date: 2019-10-03
 tags: [ procreate, premiere ]
 source: youtube

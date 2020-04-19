@@ -1,5 +1,5 @@
-# url: https://www.betweenplanets.com/
-# baseurl: dev/
+url: https://www.betweenplanets.com/
+baseurl: dev/
 permalink: /:title/
 
 artmedia: "https://media.betweenplanets.com/art/"
