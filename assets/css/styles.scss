@@ -20,6 +20,9 @@ $black: #000000;
 /* Assets Directory */
 $assets: "{{ site.assets }}";
 
+/* Transitions */
+$easy: .3s ease-in-out;
+
 body {
     background-color: $primary-bg;
     color: $primary-color;
@@ -46,6 +49,7 @@ body {
     .site-title {
         text-align: center;
         font-size: 1.9em;
+        font-weight: 300;
         background-image: url('#{$assets}sobp-triskelion-logo-still.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -67,12 +71,12 @@ body {
             a {
                 display: block;
                 padding: .2em 0;
-                background-color: rgba($primary-bg, .5);
-                border: 1px solid $secondary-color;
-                transition: background-color .3s ease-in-out;
+                background-color: rgba($hi-bg, .6);
+                border: 1px solid $black;
+                transition: background-color $easy;
             }
             a:hover {
-                background-color: rgba($primary-bg, .8);
+                background-color: rgba($hi-bg, .9);
             }
         }
     }
@@ -181,9 +185,11 @@ p.buy {
         margin: .3em 0;
         .social {
             width: 30px;
-            height: 30px;
+            height: 31px;
             margin: .3em .5em;
             display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
             img {
                 width: 30px;
                 height: 30px;
@@ -191,5 +197,27 @@ p.buy {
         }    
     }
 }
+
+.patreon {
+    background-image: url('#{$assets}patreon.svg');
+    &:hover {
+        background-image: url('#{$assets}patreon-swap.svg');       
+    }
+}
+.instagram {
+    background-image: url('#{$assets}instagram.svg');
+    background-position-y: 1px;
+    &:hover {
+        background-image: url('#{$assets}instagram-swap.svg');
+    }
+}
+.artstation {
+    background-image: url('#{$assets}artstation.svg');
+    background-position-y: 2px;
+    &:hover {
+        background-image: url('#{$assets}artstation-swap.svg');
+    }
+}
+
 
 @import "responsive";
