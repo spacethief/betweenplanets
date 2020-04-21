@@ -72,11 +72,12 @@ body {
                 display: block;
                 padding: .2em 0;
                 background-color: rgba($hi-bg, .6);
-                border: 1px solid $black;
-                transition: background-color $easy;
+                border: 1px solid rgba($secondary-color, .3);
+                transition: background-color $easy, border-color $easy;
             }
             a:hover {
                 background-color: rgba($hi-bg, .9);
+                border-color: rgba($secondary-color, .5);
             }
         }
     }

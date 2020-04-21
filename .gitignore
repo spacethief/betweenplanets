@@ -12,3 +12,4 @@ vendor/
 .DS_Store
 src media
 betweenplanets.code-workspace
+.htaccess
