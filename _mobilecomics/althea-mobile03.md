@@ -4,6 +4,7 @@ date: 2018-05-25
 order: 3
 book: Althea Mobile
 layout: book
+bookslug: althea-the-terrible
 category: mobile
 image01: althea-0301
 alt01: And now I've found her. Rebecca cheerfully shows the crypt to her zombie, Billiam.

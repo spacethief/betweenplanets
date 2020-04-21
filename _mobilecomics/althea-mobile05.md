@@ -3,6 +3,7 @@ title: "Althea the Terrible: Page Five"
 date: 2018-06-08
 order: 5
 book: Althea Mobile
+bookslug: althea-the-terrible
 layout: book
 category: mobile
 image01: althea-0501

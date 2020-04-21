@@ -3,6 +3,7 @@ title: "Althea the Terrible: Page Four"
 date: 2018-06-01
 order: 4
 book: Althea Mobile
+bookslug: althea-the-terrible
 layout: book
 category: mobile
 image01: althea-0401

@@ -3,6 +3,7 @@ title: "Althea the Terrible: Page One"
 date: 2018-05-11
 order: 1
 book: Althea Mobile
+bookslug: althea-the-terrible
 category: mobile
 image01: althea-0101
 alt01: Long ago, there was a powerful sorcerer named Althea, who commanded the dead.
