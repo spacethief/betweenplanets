@@ -4,7 +4,11 @@ $screen-medium: 80em;
 $screen-large: 110em;
 
 @media screen and (min-width:$screen-tablet) {
-    #content .gallery {
-        grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+    #content {
+        background-color: $secondary-bg;
+        .gallery {
+            grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+        }
     }
 }
+

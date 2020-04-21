@@ -22,5 +22,4 @@
         <h1 class="site-title"><a href="{{ "/" | relative_url }}">between planets</a></h1>
         {% include navigation.html %}
       </div>
-      <div id="content" 
-        class="{{ page.title | slugify }}{% if page.song %} song{% endif %}{% if page.collection == 'art' %} art-single{% endif %}{% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %} comic-single{% endif %}{% if page.source == 'youtube' %} youtube{% endif %}{% if page.class %} {{ page.class }}{% endif %}{% if page.collection == 'music' %} music{% endif %}">
+      <div id="content" class="{% unless page.collection == 'comics' %}{{ page.title | slugify }}{% endunless %}{% if page.song %} song{% endif %}{% if page.collection == 'art' %} art-single{% endif %}{% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %} comic-single {{ page.book | slugify }}{% endif %}{% if page.source == 'youtube' %} youtube{% endif %}{% if page.class %} {{ page.class }}{% endif %}{% if page.collection == 'music' %} music{% endif %}">
