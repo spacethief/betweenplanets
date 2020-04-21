@@ -5,11 +5,12 @@
 /* Fonts */
 $main-title: 'Architects Daughter', sans-serif;
 $post-title: 'Philosopher', sans-serif;
+$main: 'Open Sans', sans-serif;
 
 /* Colors */
 $primary-bg: #080808;
 $hi-bg: #020516;
-$primary-color: #ffffff;
+$primary-color: #DCDCDC;
 $hi-color: #F71D93;
 $dimmed: #686868;
 $black: #000000;
@@ -21,6 +22,8 @@ body {
     background-color: $primary-bg;
     color: $primary-color;
     font-size: 16px;
+    font-family: $main;
+    font-weight: 300;
 }
 
 #page {
@@ -47,26 +50,27 @@ body {
         background-size: 70%;
         min-height: 50px;
         text-shadow: 1px 1px $black, -10px -10px 6px rgba($black,0.4);
+        padding: .2em 0;
     }
     .site-title:hover { 
         background-image: url('#{$assets}sobp-triskelion-logo-spin.png');
     }
     nav {
         display: grid;
-        grid-template-columns: repeat(3,minmax(100px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
         text-align: center;
         padding: 0 .3em;
-        grid-column-gap: .3em;
+        grid-gap: .3em;
         span {
             a {
                 display: block;
                 padding: .2em 0;
-                background-color: $hi-bg;
+                background-color: rgba($primary-bg, .5);
                 border: 1px solid;
                 transition: background-color .3s ease-in-out;
             }
             a:hover {
-                background-color: $primary-bg;
+                background-color: rgba($primary-bg, .8);
             }
         }
     }
@@ -102,15 +106,7 @@ body {
     p {
         margin: 0;
         text-align: center;
-    }
-    p.buy {
-        margin: 1em 0;
-        a {
-            color: $hi-color;
-            border-bottom: 1px solid;
-        }
-    }
-   
+    }   
 }
 #content.comic-single {
     p {
@@ -125,6 +121,19 @@ body {
     width: 100%;
     height: 90vh;
 }
+p.buy {
+    margin: 1em 0;
+    a {
+        color: $hi-color;
+        border-bottom: 1px solid;
+        margin-right: 1em;
+    }
+    a:last-of-type {
+        margin-right: 0;
+    }
+
+}
+
 
 .postnav {
     display: grid;

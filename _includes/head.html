@@ -23,4 +23,4 @@
         {% include navigation.html %}
       </div>
       <div id="content" 
-        class="{{ page.title | slugify }}{% if page.song %} song{% endif %}{% if page.collection == 'art' %} art-single{% endif %}{% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %} comic-single{% endif %}{% if page.source == 'youtube' %} youtube{% endif %}{% if page.class %} {{ page.class }}{% endif %}">
+        class="{{ page.title | slugify }}{% if page.song %} song{% endif %}{% if page.collection == 'art' %} art-single{% endif %}{% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %} comic-single{% endif %}{% if page.source == 'youtube' %} youtube{% endif %}{% if page.class %} {{ page.class }}{% endif %}{% if page.collection == 'music' %} music{% endif %}">

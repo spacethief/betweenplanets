@@ -6,6 +6,9 @@ artmedia: "https://media.betweenplanets.com/art/"
 comicsmedia: "https://media.betweenplanets.com/comics/"
 assets: "https://media.betweenplanets.com/assets/"
 animedia: "https://media.betweenplanets.com/animation/"
+musicmedia: "https://media.betweenplanets.com/music/"
+
+linkopener: 'target="_blank" rel="noopener noreferrer"'
 
 collections:
   animation:
@@ -20,23 +23,10 @@ collections:
   mobilecomics:
     output: true
     permalink: /comics/:title/
+  music:
+    output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "comics"
-    values:
-      layout: "book_cover"
-  - scope:
-      path: ""
-      type: "fullcomics"
-    values:
-      layout: "book"
-  - scope:
-      path: ""
-      type: "mobilecomics"
-    values:
-      layout: "book"
   - scope:
       path: ""
     values:
@@ -50,4 +40,4 @@ plugins:
 sass:
   style: compressed
 
-exclude: ["/src media/","favicon*","/assets/images/","betweenplanets.code-workspace"]
+exclude: ["/src media/","/assets/images/","betweenplanets.code-workspace"]

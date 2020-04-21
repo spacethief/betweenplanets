@@ -1,3 +1,7 @@
+{% assign thisbook = page.book %}
+{% assign fullbook = site.fullcomics | where:item.book, thisbook %}
+{% assign mobook = site.mobilecomics | where:item.book, thisbook %}
+
 <nav class="postnav">
     {% if page.previous.url %}
         <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">previous</a>
@@ -7,6 +11,10 @@
         <a class="previous" href="{{ '/comics/' | relative_url }}">more comics</a>
     {% elsif page.collection == 'animation' %}
         <a class="previous" href="{{ '/animation/' | relative_url }}">theater</a>
+    {% elsif page.collection == 'comics' %}
+        {% for comics in fullbook limit:1 %}
+        <a class="previous" href="{{ comics.url | relative_url }}">Full Page Layout</a>
+        {% endfor %}
     {% else %}
         <p class="previous">that's it</a>
     {% endif %}
@@ -19,6 +27,10 @@
         <a class="next" href="{{ '/comics/' | relative_url }}">more comics</a>
     {% elsif page.collection == 'animation' %}
         <a class="next" href="{{ '/animation/' | relative_url }}">theater</a>
+    {% elsif page.collection == 'comics' %}
+        {% for comics in mobook limit:1 %}
+        <a href="{{ comics.url | relative_url }}">Mobile Layout</a>
+        {% endfor %}
     {% else %}
         <p class="previous">that's it</a>
     {% endif %}

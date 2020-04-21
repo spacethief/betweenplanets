@@ -5,7 +5,7 @@ date: 2019-10-08
 tags: [ procreate ]
 image: second-first-steps
 alt: A necromancer awakens a skeleton warrior.
-caption: Where's my camera?
+caption: They grow up so fast.
 cast: [ rebecca ]
 ---
 # {{ page.title }}
