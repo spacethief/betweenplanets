@@ -7,4 +7,6 @@ category: fullpage
 image: althea-full-p08
 alt: Alas, poor Althea.
 caption: Alas, poor Althea.
+link: true
+gumroad: https://gum.co/cLyet
 ---

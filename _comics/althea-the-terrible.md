@@ -6,4 +6,6 @@ categories: [ "fullpage", "mobile" ]
 image: althea-cover
 alt: A grinning skull
 cast: [ rebecca, billiam, althea ]
+link: true
+gumroad: https://gum.co/cLyet
 ---

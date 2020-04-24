@@ -14,4 +14,6 @@ image03: althea-0803
 alt03: Great! Rebecca shoves the skull into her bag.
 image04: althea-0804
 alt04: Come along, Billiam. I don't want to get caught here and end up a skull on a stick.
+link: true
+gumroad: https://gum.co/cLyet
 ---

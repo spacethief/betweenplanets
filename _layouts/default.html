@@ -107,12 +107,19 @@
     <p class="tags">{{ page.tags | sort | join: ", " }}</p>
 {% endif %}
 
-{% if page.link %}
-    <p class="buy"><a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">Buy</a></p>
-{% endif %}
-
 {% unless page.collection == nil or page.collection == 'music' %}
     {% include postnav.html %}
 {% endunless %}
+
+{% if page.link %}
+    <nav class="postnav">
+        {% if page.artstation %}
+            <a href="{{ page.artstation }}" target="_blank" rel="noopener noreferrer">Buy on artstation</a>
+        {% endif %}
+        {% if page.gumroad %}
+            <a href="{{ page.gumroad }}" target="_blank" rel="noopener noreferrer">Buy on gumroad</a>
+        {% endif %}    
+    </nav>
+{% endif %}
 
 {% include foot.html %}
