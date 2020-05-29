@@ -15,3 +15,5 @@ Hi, I’m Ben. Welcome to my world.
     <source srcset="{{ site.artmedia }}space-thief-sign.png" type="image/png"> 
     <img style="text-align:center;" src="{{ site.artmedia }}space-thief-sign.png" alt="Space Thief holding a sign that says 'Hello' while a kitty sleeps nearby." title="Hello.">
 </picture>
+
+<a href='https://ko-fi.com/B0B2V2QD' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
