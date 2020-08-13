@@ -1,5 +1,5 @@
 ---
-title: Raven Song (colorized)
+title: Song for the Raven
 date: 2020-08-09
 tags: [ brushpen, marker, "artstudio pro" ]
 image: raven-song
