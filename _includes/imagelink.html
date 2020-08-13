@@ -1,0 +1,26 @@
+{% assign thisbook = page.book %}
+{% assign fullbook = site.fullcomics | where:item.book, thisbook %}
+{% assign mobook = site.mobilecomics | where:item.book, thisbook %}
+{% if page.collection == 'mobilecomics' %}
+    {% assign thisbookslug = page.bookslug %}
+{% else %}
+    {% assign thisbookslug = page.book | slugify %}
+{% endif %}
+{% assign thiscover = '/comics/' | append: thisbookslug %}
+
+    {% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}
+        {% if page.next.url %}
+            <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">
+        {% else %}
+            <a class="next" href="{{ '/comics/' | relative_url }}">
+        {% endif %}
+
+    {% else %}
+        {% if page.previous.url %}
+            <a class="next" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">
+        {% elsif page.collection == 'art' %}
+            <a class="next" href="{{ '/art/' | relative_url }}">
+        {% elsif page.collection == 'animation' %}
+            <a class="next" href="{{ '/animation/' | relative_url }}">
+        {% endif %}
+    {% endif %}

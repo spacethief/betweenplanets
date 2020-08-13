@@ -40,6 +40,7 @@ body {
 }
 
 #sitehead {
+    grid-area: head;
     font-family: $main-title;
     color: $hi-color;
     background-image: url('#{$assets}starfieldb-700.jpg');
@@ -88,6 +89,7 @@ body {
     margin: 0;
     padding: 2%;
     max-width: 100%;
+    grid-area: content;
     h1 {
         font-family: $post-title;
         color: $hi-color;
@@ -171,6 +173,7 @@ p.buy {
 }
 
 #sitefoot {
+    grid-area: foot;
     height: 50px;
     flex-shrink: 0;
     text-align: center;

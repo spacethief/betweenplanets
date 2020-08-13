@@ -18,3 +18,38 @@ $screen-large: 110em;
     }
 }
 
+@media screen and (orientation: landscape) and (min-width:$screen-medium) {
+    #page {
+        display: grid;
+        grid-template-areas:
+            "head content"
+            "foot content";
+        grid-template-rows: max-content;
+        margin: initial;
+        max-width: 1100px;
+    }
+    #sitehead, #sitefoot {
+        max-width: initial;
+        width: 400px;
+    }
+    #content {
+        width: 700px;
+        max-width: initial;
+        &.art-single {
+            height: calc(100vh - 3%);
+            .theimage {
+                img {
+                    height: calc(100vh - 150px);
+                }
+                a {
+                    display: block;
+                    text-align: center;
+                }
+            }    
+        }
+        &.youtube {
+            margin-left: -35px;
+            width: 665px;
+        }
+    }
+}
