@@ -37,7 +37,7 @@ $screen-large: 110em;
         width: 700px;
         max-width: initial;
         &.art-single {
-            height: calc(100vh - 3%);
+            height: 100vh;
             .theimage {
                 img {
                     height: calc(100vh - 150px);

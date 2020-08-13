@@ -10,4 +10,3 @@ link: true
 artstation: https://artstn.co/pp/B8ZL
 ---
 # {{ page.title }}
-Necromancers can animate corpses, but they can also yank the souls out of said animated corpses. Here our intrepid sorceress returns these undead skeletons to an unanimated state while her raven familiar looks on.
