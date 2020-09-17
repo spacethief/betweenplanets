@@ -25,13 +25,13 @@ $screen-large: 110em;
     }
     #sitehead, #sitefoot {
         max-width: initial;
-        background-size: cover;
+        width: 1200px;
+        margin: 0 auto;
+        background: none;
     }
     #sitehead {
         .site-title {
             padding: 1% 0 1% 30px;
-            text-align: left;
-            background-position: 30px;
             background-size: 20%;
             min-height: initial;
         }

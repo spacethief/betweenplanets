@@ -43,7 +43,8 @@ body {
     grid-area: head;
     font-family: $main-title;
     color: $hi-color;
-    background-image: url('#{$assets}starfieldb-700.jpg');
+    background-color: $hi-bg;
+    // background-image: url('#{$assets}starfieldb-700.jpg');
     a {
         color: $hi-color;
     }
@@ -117,7 +118,7 @@ body {
             text-align: center;
         }   
     }
-    &.comic-single {
+    &.comic-single, &.comic-cover {
         p {
             margin: 0;
             text-align: center;
@@ -179,7 +180,7 @@ p.buy {
     text-align: center;
     width: 100%;
     background-color: $hi-bg;
-    background-image: url('#{$assets}starfieldb-700.jpg');
+    // background-image: url('#{$assets}starfieldb-700.jpg');
     padding: 0;
     p {
         margin: 0;
