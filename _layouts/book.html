@@ -50,6 +50,7 @@
     </a>
 {% endif %}
 {% if page.image04 %}
+    {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image04}}.webp" type="image/webp">
         <source srcset="{{ media }}{{page.image04}}.jpg" type="image/jpeg"> 
