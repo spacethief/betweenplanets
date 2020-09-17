@@ -4,7 +4,6 @@ date: 2018-05-18
 order: 2
 book: Althea Mobile
 bookslug: althea-the-terrible
-layout: book
 category: mobile
 image01: althea-0201
 alt01: They bound her and took her to an unoccupied crypt in the cemetery.

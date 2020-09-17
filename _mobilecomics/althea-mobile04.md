@@ -4,7 +4,6 @@ date: 2018-06-01
 order: 4
 book: Althea Mobile
 bookslug: althea-the-terrible
-layout: book
 category: mobile
 image01: althea-0401
 alt01: Rebecca stands in the doorway, smiling. Billiam holds the lantern and awaits his next instruction.

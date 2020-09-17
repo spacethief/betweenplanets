@@ -4,7 +4,6 @@ date: 2018-06-22
 order: 7
 book: Althea Mobile
 bookslug: althea-the-terrible
-layout: book
 category: mobile
 image01: althea-0701
 alt01: "Althea: Is that meant to be a joke? Rebecca: Well, more of a play on words."

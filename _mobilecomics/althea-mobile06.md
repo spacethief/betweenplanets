@@ -4,7 +4,6 @@ date: 2018-06-15
 order: 6
 book: Althea Mobile
 bookslug: althea-the-terrible
-layout: book
 category: mobile
 image01: althea-0601
 alt01: Fool! The skeleton has awakened.

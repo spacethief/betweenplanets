@@ -4,7 +4,6 @@ date: 2018-06-29
 order: 8
 book: Althea Mobile
 bookslug: althea-the-terrible
-layout: book
 category: mobile
 image01: althea-0801
 alt01: So, would you rather I put you on my staff, or should I seal you back up for all eternity?

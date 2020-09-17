@@ -4,7 +4,6 @@ date: 2018-06-08
 order: 5
 book: Althea Mobile
 bookslug: althea-the-terrible
-layout: book
 category: mobile
 image01: althea-0501
 alt01: Seems silly to put a magic seal on the door but not the sarcophagus.
