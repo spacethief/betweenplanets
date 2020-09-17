@@ -48,8 +48,10 @@ $screen-large: 110em;
                 }
             }    
         }
-        &.art-single .theimage img {
-            height: calc(100vh - 150px);
+        &.art-single {
+            .theimage img {
+                height: calc(100vh - 150px);
+            }
         }
         &.comic-single .theimage img {
             height: calc(100vh - 60px);
@@ -72,5 +74,9 @@ $screen-large: 110em;
                     height: calc(100vh - 30px);
                 }
             }
+        }
+        h1 {
+            margin: 0 auto .3em;
+            max-width: 800px;
         }
     }
