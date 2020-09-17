@@ -124,6 +124,12 @@ body {
             text-align: center;
         }
     }
+    &.comic-mobile {
+        p {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
     &.youtube {
         width: 95%;
     }
