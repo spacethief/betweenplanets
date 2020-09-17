@@ -59,6 +59,9 @@ $screen-large: 110em;
         &.comic-cover .theimage img {
             height: calc(100vh - 100px);
         }
+        &.comic-mobile {
+            height: initial;
+        }
 
         }
         &.youtube {
