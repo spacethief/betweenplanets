@@ -83,3 +83,10 @@ $screen-large: 110em;
             max-width: 800px;
         }
     }
+
+@media screen and (orientation: landscape) and (min-width:$screen-large) {
+    #content h1 { 
+        padding-left: 0;
+        max-width: 1020px; 
+    }
+}

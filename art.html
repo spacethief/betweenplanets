@@ -10,9 +10,9 @@ layout: gallery
     <picture>
         <source media="(max-width: 49em)" srcset="{{ media }}{{ art.image }}-thumb.webp" type="image/webp">
         <source media="(max-width: 49em)" srcset="{{ media }}{{ art.image }}-thumb.jpg" type="image/jpeg"> 
-        <source media="(min-width: 50em)" srcset="{{ media }}{{ art.image }}-thumb-320.webp" type="image/webp">
-        <source media="(min-width: 50em)" srcset="{{ media }}{{ art.image }}-thumb-320.jpg" type="image/jpeg"> 
-        <img src="{{ media }}{{ art.image }}-thumb-320.jpg" alt="{{art.alt}}" title="{{art.title}}" loading="lazy">
+        <source media="(min-width: 50em)" srcset="{{ media }}{{ art.image }}-thumb-sm.webp" type="image/webp">
+        <source media="(min-width: 50em)" srcset="{{ media }}{{ art.image }}-thumb-sm.jpg" type="image/jpeg"> 
+        <img src="{{ media }}{{ art.image }}-thumb-sm.jpg" alt="{{art.alt}}" title="{{art.title}}" loading="lazy">
   </picture>
 </a>
 {% endfor %}
