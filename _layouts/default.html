@@ -4,7 +4,9 @@
     {% include soundcloud.html %}
 {% endif %}
 
-{{ content }}
+{% unless page.collection == 'art' %}
+    {{ content }}
+{% endunless %}
 
 {% assign small = '(max-width: 320px)' %}
 {% assign medium = '(min-width: 321px) and (max-width: 540px)' %}
@@ -23,6 +25,7 @@
 {% if page.image or page.featured %}
 {% unless page.collection == 'music' %}
     <div class="theimage">
+        {% if page.collection == 'art' %}{{ content }}{% endif %}
         {% unless page.collection == nil %}{% include imagelink.html %}{% endunless %}
         <picture>
             <source type="image/webp" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.webp 320w">
