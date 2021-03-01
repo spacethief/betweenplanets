@@ -229,5 +229,9 @@ p.buy {
     }
 }
 
+body > div:last-of-type {
+    display: none;
+}
+
 
 @import "responsive";

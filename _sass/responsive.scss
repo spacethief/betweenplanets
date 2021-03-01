@@ -19,6 +19,9 @@ $screen-large: 110em;
             padding: 2% 0 2.2%;
         }
     }
+    body > div:last-of-type {
+        display: block;
+    }
 }
 
 @media screen and (orientation: landscape) and (min-width:$screen-medium) {
