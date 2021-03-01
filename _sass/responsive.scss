@@ -42,7 +42,7 @@ $screen-large: 110em;
     #content {
         max-width: initial;
         &.art-single, &.comic-single, &.comic-cover {
-            height: 100vh;
+            // height: 100vh;
             .theimage {
                 text-align: center;
                 max-width: fit-content;
@@ -56,7 +56,7 @@ $screen-large: 110em;
                 }
             }    
         }
-        &.art-single {
+        /* &.art-single {
             .theimage img {
                 height: calc(100vh - 150px);
             }
@@ -66,7 +66,7 @@ $screen-large: 110em;
         }
         &.comic-cover .theimage img {
             height: calc(100vh - 100px);
-        }
+        } */
         &.comic-mobile {
             height: initial;
         }
@@ -96,6 +96,10 @@ $screen-large: 110em;
             display: block;
             max-width: 800px;
             text-align: center;
+            margin: 0 auto;
+        }
+        #disqus_thread {
+            max-width: 800px;
             margin: 0 auto;
         }
     }
