@@ -12,6 +12,8 @@
 
 {% include fonts.html %}
 {% include ko-fi.html %}
-{% include cloudflare_analytics.html %}
+{% if jekyll.environment == "live" %}
+    {% include cloudflare.html %}
+{% endif %}
 </body>
 </html>

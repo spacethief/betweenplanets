@@ -1,11 +1,11 @@
 url: https://www.betweenplanets.com
 permalink: /:title/
 
-artmedia: "https://media.betweenplanets.com/art/"
-comicsmedia: "https://media.betweenplanets.com/comics/"
-assets: "https://media.betweenplanets.com/assets/"
-animedia: "https://media.betweenplanets.com/animation/"
-musicmedia: "https://media.betweenplanets.com/music/"
+artmedia: "/media/art/"
+comicsmedia: "/media/comics/"
+assets: "/media/assets/"
+animedia: "/media/animation/"
+musicmedia: "/media/music/"
 
 linkopener: 'target="_blank" rel="noopener noreferrer"'
 
