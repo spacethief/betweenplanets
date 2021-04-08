@@ -17,6 +17,11 @@
 {% assign book = page.book | slugify %}
 {% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{% assign media = site.comicsmedia | append: book | append: '/' %}{% elsif page.collection == 'animation' %}{% assign media = site.animedia %}{% elsif page.collection == 'music' %}{% assign media = site.musicmedia | append: album | append: '/' %}{% else %}{% assign media = site.artmedia %}{% endif %}
 
+{% if page.slider %}
+<div id="slider" style="width:500px;margin:30px auto;">
+    {% include carousel.html height="100" unit="%" duration="15" %}
+</div>
+{% endif %}
 {% if page.featured %}
     {% assign theimage = page.featured %}
 {% else %}
