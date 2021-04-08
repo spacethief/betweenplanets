@@ -1,0 +1,47 @@
+url: https://www.betweenplanets.com
+permalink: /:title/
+
+artmedia: "/assets/media/art/"
+comicsmedia: "/assets/media/comics/"
+assets: "/assets/media/assets/"
+animedia: "/assets/media/animation/"
+musicmedia: "/assets/media/music/"
+
+linkopener: 'target="_blank" rel="noopener noreferrer"'
+
+collections:
+  animation:
+    output: true
+  art:
+    output: true
+  comics:
+    output: true
+  fullcomics:
+    output: true
+    permalink: /comics/:title/
+  mobilecomics:
+    output: true
+    permalink: /comics/:title/
+  music:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "mobilecomics"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+exclude: ["/src media/","/assets/images/","betweenplanets.code-workspace"]
