@@ -14,3 +14,6 @@ src media
 betweenplanets.code-workspace
 .htaccess
 old-favicon.ico
+
+# Ignore Obsidian config
+.obsidian
