@@ -31,21 +31,24 @@ body {
     font-weight: 300;
 }
 
-#pageWrapper.where-stardust-falls {
+#pageWraper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: 0 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-size: cover;
-    background-attachment: scroll;
-    overflow: hidden auto;
-    max-height: 100%;
-    background-position: 50% 15%;
-    background-repeat: no-repeat no-repeat;
-    background-image: url("#{$assets}space-dragon.jpg");
+    &.where-stardust-falls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 0 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-size: cover;
+        background-attachment: scroll;
+        overflow: hidden auto;
+        max-height: 100%;
+        background-position: 50% 15%;
+        background-repeat: no-repeat no-repeat;
+        background-image: url("#{$assets}space-dragon.jpg");
+    }
 }
 
 #page {
