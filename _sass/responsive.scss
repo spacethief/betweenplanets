@@ -33,6 +33,7 @@ $screen-large: 110em;
 @media screen and (orientation: landscape) and (min-width:$screen-medium) {
     #pageWrapper.where-stardust-falls {
         background-image: url("#{$assets}space-dragon-lg.jpg");
+        height: 100%;
     }
     #page {
         margin: initial;
