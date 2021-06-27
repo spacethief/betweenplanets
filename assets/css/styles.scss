@@ -31,10 +31,9 @@ body {
     font-weight: 300;
 }
 
-#pageWraper {
+#pageWrapper {
     display: flex;
     &.where-stardust-falls {
-        display: flex;
         justify-content: center;
         align-items: center;
         background-size: 0 0;
