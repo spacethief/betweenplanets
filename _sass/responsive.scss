@@ -13,11 +13,14 @@ $screen-large: 110em;
             padding-left: 0;
         }
     }
-    .where-stardust-falls #content {
-        background-color: transparent;
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
+    .where-stardust-falls #page {
+        height: 100vh;
+        #content {
+            background-color: transparent;
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
     #sitehead {
         .site-title {
