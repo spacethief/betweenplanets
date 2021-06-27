@@ -47,7 +47,7 @@ body {
         background-position: 50% 15%;
         background-repeat: no-repeat no-repeat;
         background-image: url("#{$assets}space-dragon.jpg");
-        height: 100vh;
+        height: calc(100vh - 1.3%);
     }
 }
 
