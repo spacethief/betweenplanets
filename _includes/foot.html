@@ -9,9 +9,12 @@
 </footer>
 
     </div><!-- #page -->
+</div><!-- #pageWrapper -->
 
 {% include fonts.html %}
-{% include ko-fi.html %}
+{% if page.url == "/" %}
+    {% include ko-fi.html %}
+{% endif %}
 {% if jekyll.environment == "live" %}
     {% include cloudflare.html %}
 {% endif %}

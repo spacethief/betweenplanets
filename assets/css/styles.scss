@@ -31,6 +31,23 @@ body {
     font-weight: 300;
 }
 
+#pageWrapper.where-stardust-falls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 0 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    overflow: hidden auto;
+    max-height: 100%;
+    background-position: 50% 15%;
+    background-repeat: no-repeat no-repeat;
+    background-image: url("#{$assets}space-dragon.jpg");
+}
+
 #page {
     display: flex;
     flex-direction: column;
@@ -38,7 +55,9 @@ body {
     max-width: 700px;
     margin: 0 auto;
 }
-
+.where-stardust-falls #page {
+    width: 100%;
+}
 #sitehead {
     grid-area: head;
     font-family: $main-title;
@@ -137,10 +156,6 @@ body {
         width: 100%;
         height: 90vh;
     }
-    &.where-stardust-falls {
-        padding: 2% 0 0;
-    }
-    &.where-stardust-falls,
     &.althea-the-terrible,
     &.althea-mobile {
         background-color: $black;
@@ -205,6 +220,12 @@ p.buy {
                 height: 30px;
             }
         }    
+    }
+}
+.where-stardust-falls {
+    #sitehead, #sitefoot, #content p {
+        background-color: transparent;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.88));
     }
 }
 
