@@ -1,0 +1,9 @@
+---
+title: stories
+layout: gallery
+---
+{% assign media = site.storiesmedia %}
+
+{% for stories in site.stories %}
+    <a href="{{ stories.link }}" {{site.linkopener}}><img src="{{ media }}{{ stories.cover }}" alt="{{ stories.title }} - {{ stories.location }}" title="{{ stories.title }} - {{ stories.location }}"></a>
+{% endfor %}

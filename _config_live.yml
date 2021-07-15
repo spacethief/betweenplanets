@@ -6,6 +6,7 @@ comicsmedia: "/assets/media/comics/"
 assets: "/assets/images/"
 animedia: "/assets/media/animation/"
 musicmedia: "/assets/media/music/"
+storiesmedia: "/assets/media/stories/"
 
 linkopener: 'target="_blank" rel="noopener noreferrer"'
 
@@ -23,6 +24,8 @@ collections:
     output: true
     permalink: /comics/:title/
   music:
+    output: true
+  stories:
     output: true
 
 defaults:

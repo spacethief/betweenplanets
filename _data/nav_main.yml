@@ -1,5 +1,7 @@
 - name: Art
   url: /art/
+- name: Stories
+  url: /stories/
 - name: Comics
   url: /comics/
 - name: Animation
