@@ -263,11 +263,13 @@ body > div:last-of-type {
     h3, span {
         font-family: $post-title;
         color: #fff;
+        align-self: center;
     }
-    img {
-        height: 240px;
-        width: auto;
-    }    
+    a {
+        display: grid;
+        align-items: end;
+        grid-template-rows: auto 45px 20px;
+    }
 }
 
 @import "responsive";
