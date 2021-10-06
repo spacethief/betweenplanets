@@ -257,5 +257,17 @@ body > div:last-of-type {
     display: none;
 }
 
+#content.stories .gallery {
+    text-align: center;
+    grid-gap: 15px;
+    h3, span {
+        font-family: $post-title;
+        color: #fff;
+    }
+    img {
+        height: 240px;
+        width: auto;
+    }    
+}
 
 @import "responsive";

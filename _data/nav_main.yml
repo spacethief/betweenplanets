@@ -2,8 +2,6 @@
   url: /art/
 - name: Stories
   url: /stories/
-- name: Comics
-  url: /comics/
 - name: Animation
   url: /animation/
 - name: Music

@@ -1,7 +1,8 @@
 ---
 title: The Book of Bokkarh
 date: 2021-07-13
-link: http://amzn.com/B0993P1WWM
-cover: bob_vella2-sm.jpg
+linkurl: https://www.amazon.com/kindle-vella/story/B0993P1WWM
+image: bob_vella
+book: The Book of Bokkarh
 location: Kindle Vella
 ---
