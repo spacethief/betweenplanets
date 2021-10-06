@@ -5,16 +5,16 @@ layout: gallery
 {% assign media = site.comicsmedia %}
 {% assign stories = site.stories | concat: site.comics | sort:"date" | reverse %}
 
-{% for stories in stories %}
+{% for story in stories %}
     <a 
-        {% if stories.linkurl %} 
-            href="{{ stories.linkurl }}" {{site.linkopener}} 
+        {% if story.linkurl %} 
+            href="{{ story.linkurl }}" {{site.linkopener}} 
         {% else %} 
-            href="{{ stories.url | relative_url }}" 
+            href="{{ story.url | relative_url }}" 
         {% endif %}
     >
-        <img src="{{ media }}{{ stories.book | slugify }}/{{ stories.image }}-thumb.jpg" alt="{{ stories.title }}{% if stories.location %} - {{ stories.location }}{% endif %}" title="{{ stories.title }}{% if stories.location %} - {{ stories.location }}{% endif %}">
-        <h3>{{ stories.title }}</h3>
-        <span>{{ stories.date | date: "%Y" }}</span>
+        <img src="{{ media }}{{ story.book | slugify }}/{{ story.image }}-thumb.jpg" alt="{{ story.title }}{% if story.location %} - {{ story.location }}{% endif %}" title="{{ story.title }}{% if story.location %} - {{ story.location }}{% endif %}">
+        <h3>{{ story.title }}</h3>
+        <span>{{ story.date | date: "%Y" }}</span>
     </a>
 {% endfor %}
