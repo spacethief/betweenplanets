@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <title>{{ page.title }} ...between planets</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include gtag.html %}
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {% feed_meta %}
     {% seo %}
+    {% seo title=false %}
   </head>
   <body>
     <div id="pageWrapper" class="{{ page.title | slugify }}{% if page.collection == 'art' %} art-single{% endif %}">
