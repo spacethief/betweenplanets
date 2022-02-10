@@ -6,7 +6,6 @@ image: dragon-bones
 alt: A floating platform takes Rebecca, Edgar, and Morgen to the top of the cliff, where they find an ancient ruin and a dragon skeleton.
 caption: Spooky.
 cast: [ rebecca, morgen, edgar ]
-link: true
-artstation: https://spacethief.artstation.com/store/art_posters/D4WX/dragon-bones
+artstation: https://artstn.co/pp/fa/D4WX
 ---
 # {{ page.title }}

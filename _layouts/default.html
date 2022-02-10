@@ -49,14 +49,20 @@
     {% include postnav.html %}
 {% endunless %}
 
-{% if page.link %}
+{% if page.artstation or page.gumroad or page.kofi or page.webtoons %}
     <nav class="postnav">
         {% if page.artstation %}
-            <a href="{{ page.artstation }}" target="_blank" rel="noopener noreferrer">Buy on artstation</a>
+            <a href="{{ page.artstation }}" {{site.linkopener}}>Buy on artstation</a>
         {% endif %}
         {% if page.gumroad %}
-            <a href="{{ page.gumroad }}" target="_blank" rel="noopener noreferrer">Buy on gumroad</a>
+            <a href="{{ page.gumroad }}" {{site.linkopener}}>Buy on gumroad</a>
         {% endif %}    
+        {% if page.kofi %}
+            <a href="{{ page.kofi }}" {{site.linkopener}}>Buy on ko-fi</a>
+        {% endif %}    
+        {% if page.webtoons %}
+            <a href="{{ page.webtoons }}" {{site.linkopener}}>Read on Webtoons</a>
+        {% endif %}        
     </nav>
 {% endif %}
 

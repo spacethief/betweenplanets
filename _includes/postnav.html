@@ -9,6 +9,7 @@
 {% assign thiscover = '/comics/' | append: thisbookslug %}
 
 <nav class="postnav">
+    <!-- previous -->
     {% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}
         {% if page.previous.url %}
             <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">previous</a>
@@ -31,6 +32,7 @@
         {% endif %}
     {% endif %}
 
+    <!-- next -->
     {% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}
         {% if page.next.url %}
             <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">next</a>
