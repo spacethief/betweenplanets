@@ -49,6 +49,7 @@ body {
         }
         #content {
             height: 50px;
+            display: flex;
         }
     }
 }
@@ -125,6 +126,7 @@ body {
         bottom: 0;
         width: 95%;
         margin: 0 auto;
+        align-self: end;
     }
     .gallery {
         display: grid;
