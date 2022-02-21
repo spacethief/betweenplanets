@@ -1,5 +1,5 @@
-# Ignore stupid things
-src media
-.htaccess
+# Currently not in use
 old-favicon.ico
 
+# Obsidian config
+.obsidian
