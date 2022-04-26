@@ -4,6 +4,8 @@
     {% include soundcloud.html %}
 {% endif %}
 
+<div class="contentInner">
+{% include breadcrumbs.html %}
 {{ content }}
 {% assign book = page.book | slugify %}
 {% assign album = page.album | slugify %}
@@ -106,4 +108,6 @@
 </p>
 
 {% include postnav.html %}
+</div>
+
 {% include foot.html %}
