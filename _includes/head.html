@@ -25,6 +25,3 @@
       </div>
       <div id="content" class="{% unless page.collection == 'comics' %}{{ page.title | slugify }}{% endunless %}{% if page.song %} song{% endif %}{% if page.collection == 'art' %} art-single{% endif %}{% if page.collection == 'fullcomics' %} comic-single {{ page.book | slugify }}{% endif %}{%if page.collection == 'mobilecomics' %} comic-mobile comic-single {{page.book | slugify}}{% endif %}{% if page.collection == 'comics' %} comic-cover {{ page.book | slugify }}{% endif %}{% if page.source == 'youtube' %} youtube{% endif %}{% if page.class %} {{ page.class }}{% endif %}{% if page.collection == 'music' %} music{% endif %}">
         
-      {% unless page.title == 'where stardust falls' or page.layout == 'gallery' %}  
-        {% include breadcrumbs.html %}
-      {% endunless %}
