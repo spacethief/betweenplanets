@@ -23,6 +23,18 @@ $assets: "{{ site.assets }}";
 /* Transitions */
 $easy: .3s ease-in-out;
 
+// Global Styles
+a {
+    color: $hi-color;
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+    padding-inline-start: 0;
+}
+
 body {
     background-color: $primary-bg;
     color: $primary-color;
@@ -68,9 +80,6 @@ body {
     color: $hi-color;
     background-color: $hi-bg;
     // background-image: url('#{$assets}starfieldb-700.jpg');
-    a {
-        color: $hi-color;
-    }
     .site-title {
         text-align: center;
         font-size: 1.9em;
@@ -152,6 +161,10 @@ body {
             margin: 0;
             text-align: center;
         }
+        .book-description p {
+            margin: 1em 0;
+            text-align: left;
+        }
     }
     &.comic-mobile {
         p {
@@ -170,7 +183,17 @@ body {
     &.althea-mobile {
         background-color: $black;
     }
-            
+    .book-description {
+        em {
+            font-style: initial;
+            text-transform: uppercase;
+            font-size: .9em;
+        }
+        strong {
+            font-weight: 300;
+            font-size: 1.3em;
+        }
+    }
 }
 p.buy {
     margin: 1em 0;
@@ -185,8 +208,7 @@ p.buy {
 
 }
 
-
-.postnav {
+.postnav, .book-description ul {
     display: grid;
     grid-template-columns: repeat(2,50%);
     max-width: 95%;
@@ -203,6 +225,7 @@ p.buy {
         color: $hi-color;
     }    
 }
+
 
 #sitefoot {
     grid-area: foot;
@@ -277,6 +300,10 @@ body > div:last-of-type {
         align-items: end;
         grid-template-rows: auto 45px 20px;
     }
+}
+
+#breadcrumbs {
+    display: none;
 }
 
 @import "responsive";

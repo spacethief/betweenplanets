@@ -1,6 +1,7 @@
 {% assign thisbook = page.book %}
 {% assign fullbook = site.fullcomics | where:item.book, thisbook %}
 {% assign mobook = site.mobilecomics | where:item.book, thisbook %}
+
 {% if page.collection == 'mobilecomics' %}
     {% assign thisbookslug = page.bookslug %}
 {% else %}

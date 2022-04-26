@@ -8,9 +8,33 @@ $screen-large: 110em;
         background-color: $secondary-bg;
         .gallery {
             grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+            max-width: 1200px;
+            margin: auto;
         }
         h1 {
             padding-left: 0;
+        }
+        .book-cover {
+            display: grid;
+            max-width: 1000px;
+            margin: 3em auto 0;
+            grid-template-columns: 350px auto;
+            gap: 0 25px;
+            h1 {
+                font-size: 2em;
+            }
+            ul {
+                list-style-type: none;
+                li a {
+                    text-decoration: none;
+                    color: $hi-color;
+                }
+            }
+        }
+        .book-description {
+            .postnav, ul {
+                margin: .3em 0;
+            }
         }
     }
     .where-stardust-falls #page {
@@ -32,6 +56,12 @@ $screen-large: 110em;
     body > div:last-of-type {
         display: block;
     }
+    #breadcrumbs {
+        text-align: right;
+        margin: auto;
+        font-size: .8em;
+    }  
+
 }
 
 @media screen and (orientation: landscape) and (min-width:$screen-medium) {
@@ -124,4 +154,8 @@ $screen-large: 110em;
             margin: 0 auto;
         }
     }
+    #breadcrumbs {
+        max-width: 1200px;
+    }
+
 }

@@ -15,7 +15,7 @@
 
 {% assign album = page.album | slugify %}
 {% assign book = page.book | slugify %}
-{% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{% assign media = site.comicsmedia | append: book | append: '/' %}{% elsif page.collection == 'animation' %}{% assign media = site.animedia %}{% elsif page.collection == 'music' %}{% assign media = site.musicmedia | append: album | append: '/' %}{% else %}{% assign media = site.artmedia %}{% endif %}
+{% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' or page.collection == 'stories' %}{% assign media = site.comicsmedia | append: book | append: '/' %}{% elsif page.collection == 'animation' %}{% assign media = site.animedia %}{% elsif page.collection == 'music' %}{% assign media = site.musicmedia | append: album | append: '/' %}{% else %}{% assign media = site.artmedia %}{% endif %}
 
 {% if page.featured %}
     {% assign theimage = page.featured %}

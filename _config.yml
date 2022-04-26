@@ -36,6 +36,16 @@ defaults:
       layout: "book"
   - scope:
       path: ""
+      type: "stories"
+    values:
+      layout: "story"
+  - scope:
+      path: ""
+      type: "comics"
+    values:
+      layout: "story"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
