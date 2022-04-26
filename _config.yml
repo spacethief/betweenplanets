@@ -36,6 +36,11 @@ defaults:
       layout: "book"
   - scope:
       path: ""
+      type: "fullcomics"
+    values:
+      layout: "comic_full"
+  - scope:
+      path: ""
       type: "stories"
     values:
       layout: "story"
@@ -44,6 +49,16 @@ defaults:
       type: "comics"
     values:
       layout: "story"
+  - scope:
+      path: ""
+      type: "art"
+    values:
+      layout: "art_single"
+  - scope:
+      path: ""
+      type: "animation"
+    values:
+      layout: "theater"
   - scope:
       path: ""
     values:

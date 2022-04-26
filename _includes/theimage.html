@@ -1,0 +1,16 @@
+{% assign small = '(max-width: 320px)' %}
+{% assign medium = '(min-width: 321px) and (max-width: 540px)' %}
+{% assign large = '(min-width: 541px) and (max-width: 800px)' %}
+{% assign xlarge = '(min-width: 801px)' %}
+
+<div class="theimage">
+    <picture>
+        <source type="image/webp" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.webp 320w">
+        <source type="image/jpeg" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.jpg 320w">
+        <source type="image/webp" media="{{medium}}" srcset="{{ media }}{{theimage}}-md.webp 540w">
+        <source type="image/jpeg" media="{{medium}}" srcset="{{ media }}{{theimage}}-md.jpg 540w">
+        <source type="image/webp" media="{{large}}" srcset="{{ media }}{{theimage}}.webp 700w">
+        <source type="image/jpeg" media="{{large}}" srcset="{{ media }}{{theimage}}.jpg 700w">
+       <img src="{{ media }}{{ theimage }}.jpg" alt="{{ page.alt }}"  title="{{ page.caption }}" loading="lazy">
+    </picture>
+</div>

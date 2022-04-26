@@ -1,17 +1,19 @@
 {% include head.html %}
-
 {% assign book = page.book | slugify %}
 {% assign media = site.comicsmedia | append: book | append: '/' %}
 {% assign theimage = page.image %}
 
-<div class="book-cover">
+<div class="contentInner">
+{% include breadcrumbs.html %}
+{{ content }}
+
 {% if page.image %}
-    {% include theimage.html %}
+    {% include imagelink.html %}
+        {% include theimage.html %}
+    </a>
 {% endif %}
 
-    <div class="book-description">
-        {{ content }}
-    </div>
+{% include postnav.html %}
 </div>
 
 {% include foot.html %}
