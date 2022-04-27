@@ -19,10 +19,10 @@ collections:
     output: true
   fullcomics:
     output: true
-    permalink: /comics/:title
+    permalink: /:collection/:title
   mobilecomics:
     output: true
-    permalink: /comics/:title
+    permalink: /:collection/:title
   music:
     output: true
   stories:
