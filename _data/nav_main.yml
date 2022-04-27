@@ -1,10 +1,10 @@
 - name: Art
-  url: /art
+  url: /art/
 - name: Stories
-  url: /stories
+  url: /stories/
 - name: Animation
-  url: /animation
+  url: /animation/
 - name: Music
-  url: /music
+  url: /music/
 - name: About
-  url: /about
+  url: /about/
