@@ -7,4 +7,3 @@ alt: Chloe takes a drink and gives the bird.
 caption: She said what she said.
 cast: [ chloe ]
 ---
-# {{ page.title }}

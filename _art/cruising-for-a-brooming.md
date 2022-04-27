@@ -8,4 +8,3 @@ caption: Should have brought a jacket.
 cast: [ rebecca, morgen ]
 artstation: https://artstn.co/pp/ap/xx9z
 ---
-# {{ page.title }}

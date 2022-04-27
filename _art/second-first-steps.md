@@ -8,4 +8,3 @@ alt: A necromancer awakens a skeleton warrior.
 caption: They grow up so fast.
 cast: [ rebecca ]
 ---
-# {{ page.title }}

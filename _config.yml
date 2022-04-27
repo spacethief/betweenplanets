@@ -1,4 +1,4 @@
-permalink: /:title/
+permalink: /:title
 description: where stardust falls
 
 artmedia: "/assets/media/art/"
@@ -19,10 +19,10 @@ collections:
     output: true
   fullcomics:
     output: true
-    permalink: /comics/:title/
+    permalink: /comics/:title
   mobilecomics:
     output: true
-    permalink: /comics/:title/
+    permalink: /comics/:title
   music:
     output: true
   stories:

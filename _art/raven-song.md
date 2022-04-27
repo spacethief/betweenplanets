@@ -7,4 +7,3 @@ alt: A witch sings to a raven perched on her arm in a forest.
 caption: Boop boop.
 cast: [ rebecca, morgen ]
 ---
-# {{ page.title }}

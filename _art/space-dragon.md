@@ -9,4 +9,3 @@ caption: In space, no one can hear you breathe.
 cast: [ rebecca, althea, cecil, chloe, ash, zeek, morgen, jack, way ]
 artstation: https://artstn.co/pp/ap/2QK9
 ---
-# {{ page.title }}

@@ -7,4 +7,3 @@ alt: A necromancer rips a corrupted spirit from the skeleton it has been possess
 caption: I ain't gonna work for no soul sucking jerk.
 cast: [ rebecca, morgen ]
 ---
-# {{ page.title }}

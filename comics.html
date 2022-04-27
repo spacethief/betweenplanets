@@ -9,7 +9,7 @@ layout: gallery
     <a href="{{ comics.url | relative_url }}">
         <picture>
             <source srcset="{{ media }}{{ comics.book | slugify }}/{{comics.image}}-thumb.webp" type="image/webp">
-            <source srcset="{{ media }}{{ comics.book | slugify }}/{{comics.image}}-thumb.jpg" type="image/jpeg"> 
+            <source srcset="{{ media }}{{ comics.book | slugify }}/{{comics.image}}-thumb.jpg" type="image/jpeg">
             <img src="{{ media }}{{ comics.book | slugify }}/{{comics.image}}-thumb.jpg" alt="{{comics.alt}}" title="{{comics.title}}">
         </picture>
     </a>

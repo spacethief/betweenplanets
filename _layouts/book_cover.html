@@ -5,7 +5,7 @@
 {% if page.image %}
     <picture>
         <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{ page.book | slugify }}/{{page.image}}.jpg" alt="{{page.alt}}" title="{{page.title}}" loading="lazy">
   </picture>
 {% endif %}

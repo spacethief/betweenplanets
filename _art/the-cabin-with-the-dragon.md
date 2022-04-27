@@ -8,4 +8,3 @@ caption: If it fits, I sits.
 cast: [ rebecca, althea, way ]
 artstation: https://artstn.co/pp/fa/DE73
 ---
-# {{ page.title }}

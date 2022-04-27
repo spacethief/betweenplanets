@@ -56,8 +56,8 @@ body {
         background-position: 50% 15%;
         background-repeat: no-repeat no-repeat;
         background-image: url("#{$assets}space-dragon.jpg");
-        #page{ 
-            height: auto; 
+        #page{
+            height: auto;
         }
         #content {
             height: 50px;
@@ -92,7 +92,7 @@ body {
         text-shadow: 1px 1px $black, -10px -10px 6px rgba($black,0.4);
         padding: .2em 0;
     }
-    .site-title:hover { 
+    .site-title:hover {
         background-image: url('#{$assets}sobp-triskelion-logo-spin.png');
     }
     nav {
@@ -123,7 +123,7 @@ body {
     padding: 2%;
     max-width: 100%;
     grid-area: content;
-    h1 {
+    h1, h2 {
         font-family: $post-title;
         color: $hi-color;
         font-size: 1.5em;
@@ -146,7 +146,7 @@ body {
         }
     }
     &.music iframe {
-        width: 100%; 
+        width: 100%;
         max-width: 700px;
         height: 1036px;
     }
@@ -154,7 +154,7 @@ body {
         p {
             margin: 0;
             text-align: center;
-        }   
+        }
     }
     &.comic-single, &.comic-cover {
         p {
@@ -183,14 +183,21 @@ body {
     &.althea-mobile {
         background-color: $black;
     }
+    &.sort-of {
+        .contentInner {
+            > p:last-of-type {
+                text-align: center;
+            }
+        }
+    }
     .book-description {
-        em {
+        strong {
             font-style: initial;
             text-transform: uppercase;
             font-size: .9em;
-        }
-        strong {
             font-weight: 300;
+        }
+        p:first-of-type:first-letter {
             font-size: 1.3em;
         }
     }
@@ -223,7 +230,7 @@ p.buy {
         padding: .3em;
         border: 1px solid $secondary-color;
         color: $hi-color;
-    }    
+    }
 }
 
 
@@ -252,7 +259,7 @@ p.buy {
                 width: 30px;
                 height: 30px;
             }
-        }    
+        }
     }
 }
 .where-stardust-falls {
@@ -265,7 +272,7 @@ p.buy {
 .patreon {
     background-image: url('#{$assets}patreon.svg');
     &:hover {
-        background-image: url('#{$assets}patreon-swap.svg');       
+        background-image: url('#{$assets}patreon-swap.svg');
     }
 }
 .instagram {

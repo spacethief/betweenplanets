@@ -7,4 +7,3 @@ alt: Rebecca rolls her eyes in front of a fiery background.
 caption: Bored Now
 cast: [ rebecca ]
 ---
-# {{ page.title }}

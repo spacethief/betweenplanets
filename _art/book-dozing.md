@@ -7,4 +7,3 @@ alt: Rebecca and Morgen doze on books.
 caption: Studying spells takes a lot out of you.
 cast: [ rebecca, morgen ]
 ---
-# {{ page.title }}

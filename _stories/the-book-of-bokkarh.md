@@ -1,5 +1,4 @@
 ---
-title: The Book of Bokkarh
 date: 2022-04-26
 book: The Book of Bokkarh
 image: bob_cover
@@ -7,9 +6,9 @@ alt: Rebecca points at a spellbook while Edgar looks off into the distance. Morg
 cast: [ rebecca, edgar, morgen, minda, bokkarh, xarn, ash, dawn ]
 location: Amazon and Kindle Vella
 ---
-# {{ page.title }}
+# The Book of Bokkarh
 
-***G**hosts. Witches. Wraiths.* Wizards. Demons. Trolls. It’s all giving Edgar one hell of a headache.
+**Ghosts. Witches. Wraiths.** Wizards. Demons. Trolls. It’s all giving Edgar one hell of a headache.
 
 Edgar wasn’t trying to be a ghost whisperer—he’s terrified of ghosts. But then the ghosts started whispering at him. Fortunately his friend Rebecca’s a witch. She knows just what to do: She’s going to teach him how to counsel ghosts so they can move on to the afterworld.
 

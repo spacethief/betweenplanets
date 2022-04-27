@@ -7,4 +7,3 @@ alt: A witch with a pointy hat and a large dragon enjoy a cup of tea under a gaz
 caption: We're all mad here.
 cast: [ rebecca, way ]
 ---
-# {{ page.title }}

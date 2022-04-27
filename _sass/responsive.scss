@@ -14,7 +14,7 @@ $screen-large: 110em;
             max-width: 1200px;
             margin: auto;
         }
-        h1 {
+        h1, h2 {
             padding-left: 0;
         }
         .book-cover {
@@ -112,7 +112,7 @@ $screen-large: 110em;
                     display: block;
                     text-align: center;
                 }
-            }    
+            }
         }
        &.comic-mobile {
             height: initial;
@@ -127,11 +127,11 @@ $screen-large: 110em;
                 }
             }
         }
-        h1 {
+        h1, h2 {
             margin: 0 auto .3em;
             max-width: initial;
         }
-        &.sort-of h1, &.sort-of p, &.where-stardust-falls p {
+        &.sort-of .contentInner, &.where-stardust-falls .contentInner {
             max-width: 800px;
             margin: 1em auto;
         }

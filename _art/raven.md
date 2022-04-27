@@ -7,4 +7,3 @@ alt: Morgen the raven perches on a gravestone.
 caption: Boop boop.
 cast: [ morgen ]
 ---
-# {{ page.title }}

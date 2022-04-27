@@ -8,4 +8,3 @@ caption: I ain't gonna work for no soul sucking jerk.
 cast: [ rebecca, morgen ]
 artstation: https://artstn.co/pp/B8ZL
 ---
-# {{ page.title }}

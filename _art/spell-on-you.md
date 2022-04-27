@@ -7,4 +7,3 @@ alt: Rebecca and Edgar share a loving gaze.
 caption: Because you're miiiiiine!
 cast: [ rebecca, edgar ]
 ---
-# {{ page.title }}

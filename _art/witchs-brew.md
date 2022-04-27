@@ -7,4 +7,3 @@ alt: Rebecca enjoys a nice, cold mug of her own craft brew.
 caption: Can I have a sip?
 cast: [ rebecca, morgen ]
 ---
-# {{ page.title }}

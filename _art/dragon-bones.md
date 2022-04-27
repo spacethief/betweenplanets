@@ -8,4 +8,3 @@ caption: Spooky.
 cast: [ rebecca, morgen, edgar ]
 artstation: https://artstn.co/pp/fa/D4WX
 ---
-# {{ page.title }}

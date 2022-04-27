@@ -7,4 +7,3 @@ alt: Cecil meets a strange creature in the cemetery.
 caption: Hello there.
 cast: [ cecil, morgen ]
 ---
-# {{ page.title }}

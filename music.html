@@ -10,7 +10,7 @@ layout: gallery
     <a href="{{ music.url | relative_url }}">
         <picture>
             <source srcset="{{ media }}{{ music.album | slugify }}/{{music.image}}.webp" type="image/webp">
-            <source srcset="{{ media }}{{ music.album | slugify }}/{{music.image}}.jpg" type="image/jpeg"> 
+            <source srcset="{{ media }}{{ music.album | slugify }}/{{music.image}}.jpg" type="image/jpeg">
             <img src="{{ media }}{{ music.album | slugify }}/{{music.image}}.jpg" alt="{{music.alt}}" title="{{music.title}}">
         </picture>
     </a>

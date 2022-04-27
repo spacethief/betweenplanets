@@ -7,4 +7,3 @@ alt: Rebecca and her staff.
 caption: Who would have thought the talking skull of an undead witch would be evil?
 cast: [ rebecca, althea ]
 ---
-# {{ page.title }}
