@@ -3,7 +3,7 @@ title: comics
 layout: gallery
 ---
 {% assign comics = site.comics | sort:"date" %}
-{% assign media = site.comicsmedia %}
+{% assign media = site.storiesmedia %}
 
 {% for comics in comics %}
     <a href="{{ comics.url | relative_url }}">
