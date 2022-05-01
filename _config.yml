@@ -1,5 +1,6 @@
 permalink: /:title/
 description: where stardust falls
+title: '...between planets'
 
 artmedia: "/assets/media/art/"
 comicsmedia: "/assets/media/comics/"

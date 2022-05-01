@@ -1,9 +1,9 @@
 {% assign small = '(max-width: 320px)' %}
 {% assign medium = '(min-width: 321px) and (max-width: 540px)' %}
 {% assign large = '(min-width: 541px) and (max-width: 800px)' %}
-{% assign xlarge = '(min-width: 801px)' %}
 
 <div class="theimage">
+    {% if page.collection == 'art' %}<h1>{{ page.title }}<span class="artdate"> ({{ page.date | date: '%B, %Y' }})</span></h1>{% endif %}
     <picture>
         <source type="image/webp" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.webp 320w">
         <source type="image/jpeg" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.jpg 320w">

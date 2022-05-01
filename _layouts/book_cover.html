@@ -1,7 +1,8 @@
 {% include head.html %}
 
 {{ content }}
-{% assign media = site.comicsmedia %}
+{% assign media = site.storiesmedia %}
+
 {% if page.image %}
     <picture>
         <source srcset="{{ media }}{{ page.book | slugify }}/{{page.image}}.webp" type="image/webp">

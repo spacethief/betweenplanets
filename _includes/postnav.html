@@ -55,3 +55,15 @@
         {% endif %}
     {% endif %}
 </nav>
+
+<!-- buy links -->
+{% if page.artstation or page.kofi %}
+    <nav class="postnav">
+        {% if page.artstation %}
+            <a href="{{ page.artstation }}" {{site.linkopener}}>Buy on artstation</a>
+        {% endif %}
+        {% if page.kofi %}
+            <a href="{{ page.kofi }}" {{site.linkopener}}>Buy on ko-fi</a>
+        {% endif %}
+    </nav>
+{% endif %}

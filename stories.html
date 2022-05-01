@@ -2,15 +2,15 @@
 title: stories
 layout: gallery
 ---
-{% assign media = site.comicsmedia %}
+{% assign media = site.storiesmedia %}
 {% assign stories = site.stories | concat: site.comics | sort:"date" | reverse %}
 
 {% for story in stories %}
-    <a 
-        {% if story.linkurl %} 
-            href="{{ story.linkurl }}" {{site.linkopener}} 
-        {% else %} 
-            href="{{ story.url | relative_url }}" 
+    <a
+        {% if story.linkurl %}
+            href="{{ story.linkurl }}" {{site.linkopener}}
+        {% else %}
+            href="{{ story.url | relative_url }}"
         {% endif %}
     >
         <img src="{{ media }}{{ story.book | slugify }}/{{ story.image }}-thumb.jpg" alt="{{ story.title }}{% if story.location %} - {{ story.location }}{% endif %}" title="{{ story.title }}{% if story.location %} - {{ story.location }}{% endif %}">

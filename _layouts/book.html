@@ -9,7 +9,7 @@
 {{ content }}
 {% assign book = page.book | slugify %}
 {% assign album = page.album | slugify %}
-{% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{% assign media = site.comicsmedia | append: book  | append: '/' %}{% elsif page.collection == 'music' %}{% assign media = site.musicmedia | append: album | append: '/' %}{% endif %}
+{% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{% assign media = site.storiesmedia | append: book  | append: '/' %}{% elsif page.collection == 'music' %}{% assign media = site.musicmedia | append: album | append: '/' %}{% endif %}
 
 <p>
 {% if page.image %}
@@ -17,7 +17,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image}}.jpg" alt="{{page.alt}}" title="{{page.alt}}" loading="lazy">
     </picture>
     </a>
@@ -28,7 +28,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image01}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image01}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image01}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image01}}.jpg" alt="{{page.alt01}}" title="{{page.alt01}}" loading="lazy">
     </picture>
     </a>
@@ -37,7 +37,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image02}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image02}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image02}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image02}}.jpg" alt="{{page.alt02}}" title="{{page.alt02}}" loading="lazy">
     </picture>
     </a>
@@ -46,7 +46,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image03}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image03}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image03}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image03}}.jpg" alt="{{page.alt03}}" title="{{page.alt03}}" loading="lazy">
     </picture>
     </a>
@@ -55,7 +55,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image04}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image04}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image04}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image04}}.jpg" alt="{{page.alt04}}" title="{{page.alt04}}" loading="lazy">
     </picture>
     </a>
@@ -64,7 +64,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image05}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image05}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image05}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image05}}.jpg" alt="{{page.alt05}}" title="{{page.alt05}}" loading="lazy">
     </picture>
     </a>
@@ -73,7 +73,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image06}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image06}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image06}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image06}}.jpg" alt="{{page.alt06}}" title="{{page.alt06}}" loading="lazy">
     </picture>
     </a>
@@ -82,7 +82,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image07}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image07}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image07}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image07}}.jpg" alt="{{page.alt07}}" title="{{page.alt07}}" loading="lazy">
     </picture>
     </a>
@@ -91,7 +91,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image08}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image08}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image08}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image08}}.jpg" alt="{{page.alt08}}" title="{{page.alt08}}" loading="lazy">
     </picture>
     </a>
@@ -100,7 +100,7 @@
     {% include imagelink.html %}
     <picture>
         <source srcset="{{ media }}{{page.image09}}.webp" type="image/webp">
-        <source srcset="{{ media }}{{page.image09}}.jpg" type="image/jpeg"> 
+        <source srcset="{{ media }}{{page.image09}}.jpg" type="image/jpeg">
         <img src="{{ media }}{{page.image09}}.jpg" alt="{{page.alt09}}" title="{{page.alt09}}" loading="lazy">
     </picture>
     </a>
