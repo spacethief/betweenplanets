@@ -2,15 +2,26 @@
 {% assign medium = '(min-width: 321px) and (max-width: 540px)' %}
 {% assign large = '(min-width: 541px) and (max-width: 800px)' %}
 
+{% assign book = page.book | slugify %}
+{% assign theimage = page.image %}
+
+{% if page.book %}
+    {% assign subfolder = book | append: '/' %}
+{% elsif page.album %}
+    {% assign subfolder = album | append: '/' %}
+{% else %}
+    {% assign subfolder = null %}
+{% endif %}
+
 <div class="theimage">
     {% if page.collection == 'art' %}<h1>{{ page.title }}<span class="artdate"> ({{ page.date | date: '%B, %Y' }})</span></h1>{% endif %}
     <picture>
-        <source type="image/webp" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.webp 320w">
-        <source type="image/jpeg" media="{{small}}" srcset="{{ media }}{{theimage}}-sm.jpg 320w">
-        <source type="image/webp" media="{{medium}}" srcset="{{ media }}{{theimage}}-md.webp 540w">
-        <source type="image/jpeg" media="{{medium}}" srcset="{{ media }}{{theimage}}-md.jpg 540w">
-        <source type="image/webp" media="{{large}}" srcset="{{ media }}{{theimage}}.webp 700w">
-        <source type="image/jpeg" media="{{large}}" srcset="{{ media }}{{theimage}}.jpg 700w">
-       <img src="{{ media }}{{ theimage }}.jpg" alt="{{ page.alt }}"  title="{{ page.caption }}" loading="lazy">
+        <source type="image/webp" media="{{small}}" srcset="{{ site.media }}{{subfolder}}{{theimage}}-sm.webp 320w">
+        <source type="image/jpeg" media="{{small}}" srcset="{{ site.media }}{{subfolder}}{{theimage}}-sm.jpg 320w">
+        <source type="image/webp" media="{{medium}}" srcset="{{ site.media }}{{subfolder}}{{theimage}}-md.webp 540w">
+        <source type="image/jpeg" media="{{medium}}" srcset="{{ site.media }}{{subfolder}}{{theimage}}-md.jpg 540w">
+        <source type="image/webp" media="{{large}}" srcset="{{ site.media }}{{subfolder}}{{theimage}}.webp 700w">
+        <source type="image/jpeg" media="{{large}}" srcset="{{ site.media }}{{subfolder}}{{theimage}}.jpg 700w">
+       <img src="{{ site.media }}{{subfolder}}{{ theimage }}.jpg" alt="{{ page.alt }}"  title="{{ page.caption }}" loading="lazy">
     </picture>
 </div>

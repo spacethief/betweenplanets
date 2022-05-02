@@ -2,12 +2,8 @@ permalink: /:title/
 description: where stardust falls
 title: '...between planets'
 
-artmedia: "/assets/media/art/"
-comicsmedia: "/assets/media/comics/"
 assets: "/assets/images/"
-animedia: "/assets/media/animation/"
-musicmedia: "/assets/media/music/"
-storiesmedia: "/assets/media/stories/"
+media: "/assets/media/images/"
 
 linkopener: 'target="_blank" rel="noopener noreferrer"'
 

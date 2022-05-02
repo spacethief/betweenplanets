@@ -9,7 +9,7 @@
 {{ content }}
 {% assign book = page.book | slugify %}
 {% assign album = page.album | slugify %}
-{% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{% assign media = site.storiesmedia | append: book  | append: '/' %}{% elsif page.collection == 'music' %}{% assign media = site.musicmedia | append: album | append: '/' %}{% endif %}
+{% if page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{% assign media = site.media | append: book  | append: '/' %}{% elsif page.collection == 'music' %}{% assign media = site.media | append: album | append: '/' %}{% endif %}
 
 <p>
 {% if page.image %}

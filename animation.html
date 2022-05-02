@@ -3,22 +3,21 @@ title: theater
 layout: gallery
 ---
 {% assign theater = site.animation | sort:"date" | reverse %}
-{% assign media = site.animedia %}
 
 {% for animation in theater %}
 <a href="{{ animation.url | relative_url }}">
     <picture>
       <source
         type="image/webp"
-        srcset="{{ media }}{{ animation.thumb }}-thumb.webp 154w,
-        {{ media }}{{ animation.thumb }}-thumb-sm.webp 320w"
+        srcset="{{ site.media }}{{ animation.image }}-thumb.webp 154w,
+        {{ site.media }}{{ animation.image }}-thumb-sm.webp 320w"
       >
-      <source 
-        type="image/jpeg" 
-        srcset="{{ media }}{{ animation.thumb }}-thumb.jpg 154w,
-        {{ media }}{{ animation.thumb }}-thumb-sm.jpg"
-      > 
-      <img src="{{ media }}{{ animation.thumb }}-thumb-sm.jpg" alt="{{animation.title}}" title="{{animation.title}}" loading="lazy">
+      <source
+        type="image/jpeg"
+        srcset="{{ site.media }}{{ animation.image }}-thumb.jpg 154w,
+        {{ site.media }}{{ animation.image }}-thumb-sm.jpg"
+      >
+      <img src="{{ site.media }}{{ animation.image }}-thumb-sm.jpg" alt="{{animation.title}}" title="{{animation.title}}" loading="lazy">
   </picture>
 </a>
 {% endfor %}

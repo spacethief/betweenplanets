@@ -1,18 +1,17 @@
 ---
-title: gallery
+title: art gallery
 layout: gallery
 ---
-{% assign arts = site.art | sort:"date" | reverse %}
-{% assign media = site.artmedia %}
+{% assign arts = site.art | concat: site.animation | sort:"date" | reverse %}
 
 {% for art in arts %}
 <a href="{{ art.url | relative_url }}">
     <picture>
-        <source media="(max-width: 49em)" srcset="{{ media }}{{ art.image }}-thumb.webp" type="image/webp">
-        <source media="(max-width: 49em)" srcset="{{ media }}{{ art.image }}-thumb.jpg" type="image/jpeg"> 
-        <source media="(min-width: 50em)" srcset="{{ media }}{{ art.image }}-thumb-sm.webp" type="image/webp">
-        <source media="(min-width: 50em)" srcset="{{ media }}{{ art.image }}-thumb-sm.jpg" type="image/jpeg"> 
-        <img src="{{ media }}{{ art.image }}-thumb-sm.jpg" alt="{{art.alt}}" title="{{art.title}}" loading="lazy">
+        <source media="(max-width: 49em)" srcset="{{ site.media }}{{ art.image }}-thumb.webp" type="image/webp">
+        <source media="(max-width: 49em)" srcset="{{ site.media }}{{ art.image }}-thumb.jpg" type="image/jpeg">
+        <source media="(min-width: 50em)" srcset="{{ site.media }}{{ art.image }}-thumb-sm.webp" type="image/webp">
+        <source media="(min-width: 50em)" srcset="{{ site.media }}{{ art.image }}-thumb-sm.jpg" type="image/jpeg">
+        <img src="{{ site.media }}{{ art.image }}-thumb-sm.jpg" alt="{{art.alt}}" title="{{art.title}}" loading="lazy">
   </picture>
 </a>
 {% endfor %}

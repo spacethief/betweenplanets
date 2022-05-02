@@ -17,10 +17,18 @@
     {% seo title=false %}
   </head>
   <body>
-    <div id="pageWrapper" class="{{ page.title | slugify }}{% if page.collection == 'art' %} art-single{% endif %}">
+    <div id="pageWrapper" class="{{ page.title | slugify }}">
     <div id="page">
       <div id="sitehead">
         <h1 class="site-title"><a href="{{ "/" | relative_url }}">between planets</a></h1>
         {% include navigation.html %}
       </div>
-      <div id="content" class="{% unless page.collection == 'comics' %}{{ page.title | slugify }}{% endunless %}{% if page.song %} song{% endif %}{% if page.collection == 'art' %} art-single{% endif %}{% if page.collection == 'fullcomics' %} comic-single {{ page.book | slugify }}{% endif %}{%if page.collection == 'mobilecomics' %} comic-mobile comic-single {{page.book | slugify}}{% endif %}{% if page.collection == 'comics' %} comic-cover {{ page.book | slugify }}{% endif %}{% if page.source == 'youtube' %} youtube{% endif %}{% if page.class %} {{ page.class }}{% endif %}{% if page.collection == 'music' %} music{% endif %}">
+      <div id="content" class="{% unless page.collection == 'comics' %}{{ page.title | slugify }}{% endunless %}
+        {% if page.song %}song{% endif %}
+        {% if page.collection == 'comics' or page.collection == 'fullcomics' or page.collection == 'mobilecomics' %}{{ page.book | slugify }} comic{% endif %}
+        {% if page.collection == 'fullcomics' %}comic-single{% endif %}
+        {% if page.collection == 'mobilecomics' %}comic-mobile comic-single{% endif %}
+        {% if page.collection == 'comics' %}comic-cover{% endif %}
+        {% if page.source %}{{ page.source }}{% endif %}
+        {% if page.class %}{{ page.class }}{% endif %}
+        {% if page.collection %}{{ page.collection }}{% endif %}">

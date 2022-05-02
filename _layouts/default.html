@@ -12,6 +12,10 @@
         <p class="tags">{{ page.tags | sort | join: ", " }}</p>
     {% endif %}
 
+    {% if page.collection == 'music' %}
+        {% include postnav.html %}
+    {% endif %}
+
 </div>
 {% endunless %}
 

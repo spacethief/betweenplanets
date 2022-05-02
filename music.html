@@ -2,17 +2,26 @@
 title: music
 layout: gallery
 ---
-{% assign albums = site.music | sort:"date" %}
-{% assign media = site.musicmedia %}
+{% assign albums = site.music | sort:"date" | reverse %}
 
 {% for music in albums %}
 {% if music.cover == true %}
     <a href="{{ music.url | relative_url }}">
         <picture>
-            <source srcset="{{ media }}{{ music.album | slugify }}/{{music.image}}.webp" type="image/webp">
-            <source srcset="{{ media }}{{ music.album | slugify }}/{{music.image}}.jpg" type="image/jpeg">
-            <img src="{{ media }}{{ music.album | slugify }}/{{music.image}}.jpg" alt="{{music.alt}}" title="{{music.title}}">
+            <source srcset="{{ site.media }}{{ music.album | slugify }}/{{music.image}}.webp" type="image/webp">
+            <source srcset="{{ site.media }}{{ music.album | slugify }}/{{music.image}}.jpg" type="image/jpeg">
+            <img src="{{ site.media }}{{ music.album | slugify }}/{{music.image}}.jpg" alt="{{music.alt}}" title="{{music.title}}">
+        </picture>
+    </a>
+
+{% elsif music.thumb %}
+    <a href="{{ music.url | relative_url }}">
+        <picture>
+            <source type="image/webp" srcset="{{ site.media }}{{ music.thumb }}-thumb.webp 154w, {{ site.media }}{{ music.thumb }}-thumb-sm.webp 320w">
+            <source type="image/jpeg" srcset="{{ site.media }}{{ music.thumb }}-thumb.jpg 154w, {{ site.media }}{{ music.thumb }}-thumb-sm.jpg">
+            <img src="{{ site.media }}{{ music.thumb }}-thumb-sm.jpg" alt="{{music.title}}" title="{{music.title}}" loading="lazy">
         </picture>
     </a>
 {% endif %}
+
 {% endfor %}

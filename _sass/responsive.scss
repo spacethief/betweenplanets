@@ -57,6 +57,9 @@ $screen-large: 110em;
             background-size: 30%;
             min-height: initial;
         }
+        nav {
+            gap: .3em;
+        }
     }
     body > div:last-of-type {
         display: block;
@@ -99,7 +102,7 @@ $screen-large: 110em;
     #content {
         max-width: initial;
         padding: 2% 5%;
-        &.art-single, &.comic-single, &.comic-cover {
+        &.art, &.comic-single, &.comic-cover {
             // height: 100vh;
             .theimage {
                 text-align: center;
@@ -156,7 +159,7 @@ $screen-large: 110em;
     .contentInner {
         max-width: 1000px;
     }
-    .music .contentInner {
+    .bandcamp .contentInner {
         max-width: 700px;
     }
 

@@ -25,10 +25,10 @@
     {% else %}
         {% if page.next.url %}
             <a class="previous" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">next</a>
-        {% elsif page.collection == 'art' %}
+        {% elsif page.collection == 'art' or page.collection == 'animation' %}
             <a class="previous" href="{{ '/art/' | relative_url }}">gallery</a>
-        {% elsif page.collection == 'animation' %}
-            <a class="previous" href="{{ '/animation/' | relative_url }}">theater</a>
+        {% elsif page.collection == 'music' %}
+            <a class="previous" href="{{ '/music/' | relative_url }}">soundbooth</a>
         {% endif %}
     {% endif %}
 
@@ -48,10 +48,10 @@
     {% else %}
         {% if page.previous.url %}
             <a class="next" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">previous</a>
-        {% elsif page.collection == 'art' %}
+        {% elsif page.collection == 'art' or page.collection == 'animation' %}
             <a class="next" href="{{ '/art/' | relative_url }}">gallery</a>
-        {% elsif page.collection == 'animation' %}
-            <a class="next" href="{{ '/animation/' | relative_url }}">theater</a>
+        {% elsif page.collection == 'music' %}
+            <a class="previous" href="{{ '/music/' | relative_url }}">soundbooth</a>
         {% endif %}
     {% endif %}
 </nav>

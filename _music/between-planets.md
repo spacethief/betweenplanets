@@ -3,6 +3,7 @@ title: Between Planets
 date: 2019-10-31
 album: Between Planets
 cover: true
+source: bandcamp
 image: stbp-cover
 alt: A mysterious figure gazes into the stars.
 ---
