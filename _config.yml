@@ -1,6 +1,7 @@
 permalink: /:title/
-description: where stardust falls
 title: '...between planets'
+tagline: where stardust falls
+description: dragons, ghosts, and magic in a saga spanning worlds and generations
 
 assets: "/assets/images/"
 media: "/assets/media/images/"
