@@ -1,5 +1,5 @@
 ---
 title: where stardust falls
-image: {{ '/site-featured.jpg' | relative_url }}
+image: https://betweenplanets.com/site-featured.jpg
 song: "700460356"
 ---
