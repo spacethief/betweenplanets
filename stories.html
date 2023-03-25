@@ -14,6 +14,6 @@ layout: gallery
     >
         <img src="{{ site.media }}{{ story.book | slugify }}/{{ story.image }}-thumb.jpg" alt="{{ story.title }}{% if story.location %} - {{ story.location }}{% endif %}" title="{{ story.title }}{% if story.location %} - {{ story.location }}{% endif %}">
         <h3>{{ story.title }}</h3>
-        <span>{{ story.date | date: "%Y" }}</span>
+        <span>{% if story.serial %}{{ story.serial }}{% else %}{{ story.date | date: "%Y" }}{% endif %}</span>
     </a>
 {% endfor %}

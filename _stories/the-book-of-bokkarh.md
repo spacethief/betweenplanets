@@ -4,7 +4,6 @@ book: The Book of Bokkarh
 image: bob_cover
 alt: Rebecca points at a spellbook while Edgar looks off into the distance. Morgen is perched on the book, reading along. Behind them looms a sinister face.
 cast: [ rebecca, edgar, morgen, minda, bokkarh, xarn, ash, dawn ]
-location: Amazon and Kindle Vella
 ---
 # The Book of Bokkarh
 

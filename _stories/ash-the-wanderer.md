@@ -5,6 +5,8 @@ image: ash_cover
 alt: A portrait of Ash with the headstock of her melarne in view. Zeek is in the foreground wearing a leather hood.
 cast: [ ash, zeek, zhearxsool, zaylie, gryphon, dawn, osara ]
 location: Kindle Vella
+serial: series ongoing
+linkurl: https://www.amazon.com/kindle-vella/story/B0BLTPRD53
 ---
 # Ash the Wanderer
 
